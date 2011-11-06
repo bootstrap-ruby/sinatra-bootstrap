@@ -19,4 +19,4 @@ Download and run sinatra-bootstrap:
 	cd sinatra-bootstrap
 	ruby app.rb
 	
-And open [http://localhost:4567/](http://localhost:4567/)
+Then open [http://localhost:4567/](http://localhost:4567/)
