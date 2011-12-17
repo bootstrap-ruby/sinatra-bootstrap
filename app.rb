@@ -3,8 +3,10 @@
 require 'rubygems'
 require 'sinatra'
 
-set :public_folder, File.dirname(__FILE__) + '/static'
-enable :sessions
+configure do
+  set :public_folder, Proc.new { File.join(root, "static") }
+  enable :sessions
+end
 
 helpers do
   def username
