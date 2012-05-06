@@ -8,10 +8,9 @@ Use it as a boilerplate to start your own apps.
 Go!
 ===
 
-Install dependencies:
+Install Sinatra if you haven't already:
 
-	rvm 1.9.2
-	gem install sinatra
+    sudo gem install sinatra
 
 Download and run sinatra-bootstrap:
 
