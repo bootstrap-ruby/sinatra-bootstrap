@@ -38,7 +38,7 @@ end
 
 get '/logout' do
   session.delete(:identity)
-  erb "<div class='alert-message'>Logged out</div>"
+  erb "<div class='alert alert-message'>Logged out</div>"
 end
 
 

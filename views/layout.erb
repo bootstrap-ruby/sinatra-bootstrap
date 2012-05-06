@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-  	<title>Lala</title>
+  	<title>Sinatra + Twitter Bootstrap</title>
     <script src="/lib/jquery-1.7.min.js" type="text/javascript"></script>
-    <script src="/lib/bootstrap/js/bootstrap-dropdown.js"></script>
-    <script src="/lib/bootstrap/js/bootstrap-alerts.js"></script>
-    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css">
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
   </head>
   <body style="padding-top: 50px;">
-	<section id="navigation">
-	    <div class="topbar-wrapper" style="z-index: 5;">
-	      <div class="topbar" data-dropdown="dropdown">
-	        <div class="topbar-inner">
-	          <div class="container">
-	            <h3><a href="/">Sinatra Bootstrap</a></h3>
-	            <ul class="nav">
-	              <li><a href="/secure/place">Secret</a></li>
-	              <li class="dropdown">
-	                <a href="#" class="dropdown-toggle"><%=username%></a>
-	                <ul class="dropdown-menu">
-		              <li><a href="/login/form">Login</a></li>
-		              <li><a href="/logout">Logout</a></li>
-	                </ul>
-	              </li>
-	            </ul>
-	          </div>
-	        </div><!-- /topbar-inner -->
-	      </div><!-- /topbar -->
-	    </div><!-- /topbar-wrapper -->
-	  </section>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+
+            <a class="brand" href="#">
+              Sinatra + Twitter Bootstrap
+            </a>
+
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/secure/place">Secret</a></li>
+            </ul>
+
+            <ul class="nav pull-right">
+              <li class="dropdown">
+                <a href="#"
+                      class="dropdown-toggle"
+                      data-toggle="dropdown">
+                      <%=username%>
+                      <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                      <li><a href="/login/form">Login</a></li>
+                      <li><a href="/logout">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+
+
+        </div>
+      </div>
+    </div>
+
+
 	<div class="container">
 		<%if @error then %>
-			<div class="alert-message error"><%=@error%></div>
+			<div class="alert alert-error"><%=@error%></div>
 		<% end %>
     	<%= yield %>
 	</div>
