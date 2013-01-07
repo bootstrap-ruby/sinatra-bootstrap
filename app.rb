@@ -15,8 +15,8 @@ end
 
 before '/secure/*' do
   if !session[:identity] then
-    session[:previous_url] = request['REQUEST_PATH']
-    @error = 'Sorry guacamole, you need to be logged in to do that'
+    session[:previous_url] = request.path
+    @error = 'Sorry guacamole, you need to be logged in to visit ' + request.path
     halt erb(:login_form)
   end
 end
