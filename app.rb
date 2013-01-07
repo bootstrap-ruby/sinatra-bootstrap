@@ -1,4 +1,3 @@
-# dev hint: shotgun login.rb
 
 require 'rubygems'
 require 'sinatra'
