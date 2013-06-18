@@ -1,0 +1,7 @@
+---
+applications:
+- name: bootstrap
+  memory: 128M
+  instances: 1
+  url: bootstrap.${target-base}
+  path: .
