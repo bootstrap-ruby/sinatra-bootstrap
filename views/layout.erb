@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	<title>Sinatra + Twitter Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<head>
+		<title>Sinatra + Twitter Bootstrap</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-	  <div class="container">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
 
-	        <!-- Static navbar -->
-	        <div class="navbar navbar-default" role="navigation">
-	          <div class="navbar-header">
-	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	              <span class="sr-only">Toggle navigation</span>
-	              <span class="icon-bar"></span>
-	              <span class="icon-bar"></span>
-	              <span class="icon-bar"></span>
-	            </button>
-	            <a class="navbar-brand" href="/">Sinatra + Twitter Bootstrap</a>
-	          </div>
-	          <div class="navbar-collapse collapse">
-	            <ul class="nav navbar-nav">
-                  <li><a href="/secure/place">Secret</a></li>
-	            </ul>
-	            <ul class="nav navbar-nav navbar-right">
-  	              <li class="dropdown">
-  	                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=username%> <b class="caret"></b></a>
-	                <ul class="dropdown-menu">
-                        <li><a href="/login/form">Login</a></li>
-  	                  <li class="divider"></li>
-                        <li><a href="/logout">Logout</a></li>
-	                </ul>
-	              </li>
-					
-	            </ul>
-	          </div><!--/.nav-collapse -->
-	        </div>
+			<!-- Static navbar -->
+			<div class="navbar navbar-default" role="navigation">
+			  <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			      <span class="sr-only">Toggle navigation</span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="/">Sinatra + Twitter Bootstrap</a>
+			  </div>
+			  <div class="navbar-collapse collapse">
+			    <ul class="nav navbar-nav">
+			      <li><a href="/secure/place">Secret</a></li>
+			    </ul>
+			    <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=username%> <b class="caret"></b></a>
+			        <ul class="dropdown-menu">
+			            <li><a href="/login/form">Login</a></li>
+			            <li class="divider"></li>
+			            <li><a href="/logout">Logout</a></li>
+			        </ul>
+			      </li>
+        
+			    </ul>
+			  </div><!--/.nav-collapse -->
+			</div>
 
-	        <div class="jumbotrond">
-		  		<%if @error then %>
-		  			<div class="alert alert-error"><%=@error%></div>
-		  		<% end %>
-		      	<%= yield %>
-	        </div>
+			<div>
+			      <%if @error then %>
+			          <div class="alert alert-error"><%=@error%></div>
+			      <% end %>
+			      <%= yield %>
+			</div>
 
-	      </div>
+	</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -63,7 +63,3 @@
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
-
-
-
-
