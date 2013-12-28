@@ -10,12 +10,12 @@ Go!
 
 Download and run sinatra-bootstrap:
 
-	git clone git@github.com:pokle/sinatra-bootstrap.git
-
-	cd sinatra-bootstrap
-    bundle install				# To install sinatra
-
-	ruby app.rb 				# To run the sample
+    git clone git@github.com:pokle/sinatra-bootstrap.git
+    
+    cd sinatra-bootstrap
+    bundle install             # To install sinatra
+    
+    bundle exec ruby app.rb    # To run the sample
 	
 Then open [http://localhost:4567/](http://localhost:4567/)
 
