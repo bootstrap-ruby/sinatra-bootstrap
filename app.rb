@@ -26,3 +26,12 @@ end
 get '/community' do
 	erb "hey"
 end
+
+get '/contact' do
+
+end
+
+get '/services' do
+	erb "test"
+end
+
