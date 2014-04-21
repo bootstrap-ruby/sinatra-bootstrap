@@ -1,0 +1,9 @@
+<h3>Ad List</h3>
+
+<table border="0" cellpadding="0" cellspacing="10" class="list">
+<% @projects.each_with_index do |project,i| %>
+	<tr<%= ' class="alt"' if i%2==0 %>>
+	  <td><a href="/show/<%= project.id %>"><%= project.name %></a></td>
+		<td><a href="/delete/<%= project.id %>">delete</a></td>
+<% end %>
+</table>
