@@ -1,22 +1,13 @@
 require 'rubygems'
 require 'sinatra'
+require 'data_mapper'
+require 'sqlite3'
 
-configure do
-  enable :sessions
-end
 
-helpers do
-  def username
-    session[:identity] ? session[:identity] : 'Hello stranger'
-  end
-end
-
-before '/secure/*' do
-  if !session[:identity] then
-    session[:previous_url] = request.path
-    @error = 'Sorry guacamole, you need to be logged in to visit ' + request.path
-    halt erb(:login_form)
-  end
+configure :development do
+	DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/projects.db")
+	
+	DataMapper.auto_upgrade!
 end
 
 get '/' do
