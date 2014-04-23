@@ -1,0 +1,63 @@
+$serif: "Calluna", Georgia, serif;
+$sans: "Brandon Grotesque", Helvetica, sans-serif;
+$yl: #ffe633;
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.navbar {
+	background: transparent;
+	border: none;
+	color: white;
+	padding: 0 5%;
+	margin-top: 40px;
+	a {
+		color: white !important;
+	}
+	li {
+		text-transform: uppercase;
+	}
+}
+
+body {
+	font-family: $sans;
+}
+
+.cover {
+	height: 800px;
+	background: url('../images/cover.jpg') no-repeat;
+	background-size: cover;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	padding: 0 5%;
+	color: white;
+	z-index: -1;
+	border-bottom: 10px solid $yl;
+	h3 {
+		margin-top: 50px;
+		font-family: $serif;
+		font-style: italic;
+		font-weight: bold;
+		line-height: 140%;
+		font-size: 30px;
+	}
+	h1 {
+		position: absolute;
+		bottom: 50px;
+		margin-top: 0;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
+
+.main-content {
+	background: white;
+	overflow: auto;
+	width: 100%;	
+	padding-top: 50px;
+}
