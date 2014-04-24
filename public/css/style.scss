@@ -1,6 +1,7 @@
 $serif: "Calluna", Georgia, serif;
 $sans: "Brandon Grotesque", Helvetica, sans-serif;
 $yl: #ffe633;
+$red: #f02f16;
 
 * {
 	-webkit-box-sizing: border-box;
@@ -10,20 +11,32 @@ $yl: #ffe633;
 
 .navbar {
 	background: transparent;
+	z-index: 2;
+	top: 10px;
+	left: 0;
 	border: none;
+	border-bottom: 1px solid transparentize(#fff, .8);
 	color: white;
 	padding: 0 5%;
-	margin-top: 40px;
-	a {
-		color: white !important;
-	}
 	li {
 		text-transform: uppercase;
+		font-weight: bold;
+		a {
+			color: white !important; 
+		}
+	}
+	.navbar-brand {
+		background: url('../images/hc-logo.png') no-repeat;
+		text-indent: -9999px;
+		width: 43px;
+		height: 43px;
+		-webkit-transform: scale(.8);
 	}
 }
 
 body {
 	font-family: $sans;
+	background: white;
 }
 
 .cover {
@@ -37,27 +50,92 @@ body {
 	padding: 0 5%;
 	color: white;
 	z-index: -1;
-	border-bottom: 10px solid $yl;
 	h3 {
-		margin-top: 50px;
-		font-family: $serif;
+		margin-top: 90px;
+		font-family: $sans;
+		font-weight: 400;
 		font-style: italic;
-		font-weight: bold;
 		line-height: 140%;
-		font-size: 30px;
+		font-size: 28px;
 	}
 	h1 {
-		position: absolute;
-		bottom: 50px;
-		margin-top: 0;
+		
+		margin-top: 40px;
 		text-transform: uppercase;
 		font-weight: bold;
+		font-size: 42px;
+		span {
+			font-family: $serif;
+			text-transform: none;
+			font-style: italic;
+		}
+
+	}
+	.intro {
+		position: absolute;
+		bottom: 50px;
 	}
 }
 
 .main-content {
 	background: white;
+	border-top: 10px solid $yl;
 	overflow: auto;
 	width: 100%;	
-	padding-top: 50px;
+	padding-top: 100px;
+}
+
+.section {
+	margin-bottom: 50px;
+	img {
+		width: 100%;
+	}
+	li {
+		list-style: none;
+	}		
+}
+
+.story-block {
+	p {
+		font-size: 24px;
+		font-weight: 300;
+		margin-bottom: 30px;
+	}
+	.project-title {
+		color: $red;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	.linkout {
+		font-family: $serif;
+		font-style: italic;
+		a {
+			color: inherit;
+		}
+	}
+}
+
+.invoices-block {
+	height: 550px;
+	padding: 50px 5%;
+	margin-bottom: 0;
+	background: #d75544;
+	color: white;
+	p {
+		font-weight: 400;
+	}
+	img {
+		width: auto;
+		position: absolute;
+		margin-left: -50px;
+	}
+	.project-title {
+		color: white;
+	}
+	.meta-block {
+		position: absolute;
+		top: 350px;
+		right: 90px;
+	}
 }

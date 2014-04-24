@@ -1,23 +1,25 @@
-<h3>Create A New Ad</h3>
-
-<form	action="/create" method="post" id="project" enctype="multipart/form-data">
-	<p>
-		<label>Title:</label><br />
-		<input type="text" name="project[name]" id="title" />	
-	</p>
-	<p>
-		<label>Desc:</label><br />
-		<input type="text" name="project[description]" id="description" />	
-	</p>
-	<p>
-		<label>Filename:</label><br />
-		<input type="text" name="project[filename]" id="filename" />
-	</p>
- 	<p>
-		<label>Image File:</label><br />
-		<input type="file" name="image" id="image" />
-	</p>
-	<p>
-		<input type="submit">
-	</p>
-</form>
+<div class="container">
+	<h3>Create A New Project</h3>
+	
+	<form	action="/create" method="post" id="project" enctype="multipart/form-data">
+		<p>
+			<label>Title:</label><br />
+			<input type="text" name="project[name]" id="title" />	
+		</p>
+		<p>
+			<label>Desc:</label><br />
+			<input type="text" name="project[description]" id="description" />	
+		</p>
+		<p>
+			<label>Filename:</label><br />
+			<input type="text" name="project[filename]" id="filename" />
+		</p>
+	 	<p>
+			<label>Image File:</label><br />
+			<input type="file" name="image" id="image" />
+		</p>
+		<p>
+			<input type="submit">
+		</p>
+	</form>
+</div>
