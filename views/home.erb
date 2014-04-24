@@ -1,21 +1,43 @@
 <div class="cover">
-	<div class=" container-fluid">
+	<div class="intro">
 		<h3>Creating delightful experiences is our passion.<br /> Technology and design are our tools.<br /> The web is our medium.</h3>
-		<h1>We're Hash Cookies</h1>
+		<h1><span>We're</span> Hash Cookies.</h1>
+	</div>
+</div>
+
+<div class="main-content" id="start">
+	<div class="container">
+		
+		<div class="row section">
+			<ul class="col-md-8 col-md-offset-2  first-block  story-block">
+				<li>
+					<p class="col-md-10 col-md-offset-1 text-center">We embrace the modern web as an expressive platform to connect with people.</p>
+					<img src="images/rhodius-scr.jpg" alt="Rhodius" />
+<!--					<h4 class="project-title">Rhodius Ltd</h4>
+					<span class="linkout"><a href="#">Visit website</a></span>-->
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+	</div>
+</div>
+
+<div class="section story-block invoices-block">
+	<div class="col-md-4">
+		<p>HTML5, CSS3, Ruby on Rails, jQuery, AJAX, Node.js, MySQL, Python, PHP, Sinatra, Laravel… technology is a never ending endeavour, but meaningless without application.</p> 
+		<p>It’s what it <em>is</em> that drives us.</p>
+	</div>
+	<div class="col-md-8">
+		<img src="images/invoices.png" alt="" />
+		<div class="meta-block">
+			<h4 class="project-title">#Invoices App</h4>
+			<span class="linkout"><a href="#">Visit website</a></span>
+		</div>
 	</div>
 </div>
 
 <div class="main-content">
-	<div class="container">
-	<% @projects.each_with_index do |project,i| %>
-		<div class="col-md-3">
-		  	  <div class="col-md-12">
-		  	  	<img src="/projects/<%= project.filename %>" width="200" height="200" />
-		  	  </div>
-		  	  <div class="col-md-12">
-		  	  	<h3><a href="/show/<%= project.id %>"><%= project.name %></a></h3>
-		  	  </div>
-		</div>
-	<% end %>
-	</div>
+
 </div>
