@@ -2,6 +2,7 @@ $serif: "Calluna", Georgia, serif;
 $sans: "Brandon Grotesque", Helvetica, sans-serif;
 $yl: #ffe633;
 $red: #f02f16;
+$lightG: #f0f3f4;
 
 * {
 	-webkit-box-sizing: border-box;
@@ -10,7 +11,8 @@ $red: #f02f16;
 }
 
 .navbar {
-	background: transparentize(#000, .9);
+	background: transparentize(#000, .5);
+	display: none;
 	z-index: 2;
 	top: 0px;
 	left: 0;
@@ -86,7 +88,6 @@ body {
 }
 
 .section {
-	margin-bottom: 50px;
 	img {
 		width: 100%;
 	}
@@ -96,6 +97,7 @@ body {
 }
 
 .story-block {
+	padding-bottom: 50px;
 	p {
 		font-size: 24px;
 		font-weight: 300;
@@ -137,5 +139,20 @@ body {
 		position: absolute;
 		top: 350px;
 		right: 90px;
+	}
+}
+
+.responsive-block {
+	height: 600px;
+	background: $lightG;
+	.block-copy {
+		padding-top: 50px;
+		p {
+			font-size: 36px;
+			span {
+				color: $red;
+				font-weight: bold;
+			}
+		}
 	}
 }
