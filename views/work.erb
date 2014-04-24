@@ -1,0 +1,14 @@
+<h1>Services</h1>
+
+<div class="row section">
+	<% @projects.each_with_index do |project,i| %>
+		<div class="col-md-3">
+		  	  <div class="col-md-12">
+		  	  	<img src="/projects/<%= project.filename %>" width="200" height="200" />
+		  	  </div>
+		  	  <div class="col-md-12">
+		  	  	<h3><a href="/show/<%= project.id %>"><%= project.name %></a></h3>
+		  	  </div>
+		</div>
+	<% end %>
+</div>
