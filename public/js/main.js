@@ -6,8 +6,12 @@ var winW = $(window).width();
 $(document).ready(function() {
 	$('.cover').height(winH - 1);
 	$('#start').css({ 
-		'marginTop': winH - 58
+		'marginTop': winH - 5
 	});
+	
+	$('#responsive-slides').cycle();
+	
+	
 	
 	$(window).scroll(function() {
 		var st = $(window).scrollTop();
