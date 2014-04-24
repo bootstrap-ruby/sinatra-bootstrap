@@ -10,14 +10,14 @@ $red: #f02f16;
 }
 
 .navbar {
-	background: transparent;
+	background: transparentize(#000, .9);
 	z-index: 2;
-	top: 10px;
+	top: 0px;
 	left: 0;
 	border: none;
 	border-bottom: 1px solid transparentize(#fff, .8);
 	color: white;
-	padding: 0 5%;
+	padding: 5px 5% 0;
 	li {
 		text-transform: uppercase;
 		font-weight: bold;

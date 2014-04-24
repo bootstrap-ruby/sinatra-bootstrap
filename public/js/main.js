@@ -6,7 +6,7 @@ var winW = $(window).width();
 $(document).ready(function() {
 	$('.cover').height(winH - 1);
 	$('#start').css({ 
-		'marginTop': winH - 55
+		'marginTop': winH - 58
 	});
 	
 	$(window).scroll(function() {
