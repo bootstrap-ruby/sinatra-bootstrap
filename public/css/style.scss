@@ -12,7 +12,6 @@ $lightG: #f0f3f4;
 
 .navbar {
 	background: transparentize(#000, .5);
-	display: none;
 	z-index: 2;
 	top: 0px;
 	left: 0;
@@ -143,7 +142,7 @@ body {
 }
 
 .responsive-block {
-	height: 600px;
+	height: 560px;
 	background: $lightG;
 	.block-copy {
 		padding-top: 50px;
@@ -154,5 +153,35 @@ body {
 				font-weight: bold;
 			}
 		}
+	}
+	p.ticker-intro {
+		float: left;
+		margin-right: 10px;
+	}
+	
+	#ticker {
+		text-align: left;
+		margin-left: 307px;	
+		li {
+			color: $red;
+			font-size: 36px;
+		}
+	}
+}
+
+.design-block {
+	background: white;
+	padding-top: 80px;
+	p {
+		font-weight: 300;
+		font-size: 30px;
+		line-height: 160%;
+	}
+	.smalltext {
+		font-size: 18px;
+		line-height: 180%;
+	}
+	img {
+		width: auto;
 	}
 }
