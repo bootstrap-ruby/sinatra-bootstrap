@@ -9,11 +9,6 @@ $(document).ready(function() {
 		'marginTop': winH - 5
 	});
 	
-<<<<<<< HEAD
-	$('#responsive-slides').cycle();
-	
-	
-=======
 	$('#responsive-slides').cycle({
 		timeout: 4000,
 		delay: 500,
@@ -25,7 +20,6 @@ $(document).ready(function() {
 		timeout: 4300,
 		fx: 'scrollUp'
 	});
->>>>>>> test-vticker
 	
 	$(window).scroll(function() {
 		var st = $(window).scrollTop();
@@ -36,11 +30,8 @@ $(document).ready(function() {
 			});
 		}
 	});
-<<<<<<< HEAD
-=======
 	
 	$(window).load(function() {
 		
 	});
->>>>>>> test-vticker
 });
