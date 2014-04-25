@@ -5,7 +5,6 @@
 
 .navbar {
   background: rgba(0, 0, 0, 0.5);
-  display: none;
   z-index: 2;
   top: 0px;
   left: 0;
@@ -109,7 +108,7 @@ body {
     right: 90px; }
 
 .responsive-block {
-  height: 600px;
+  height: 560px;
   background: #f0f3f4; }
   .responsive-block .block-copy {
     padding-top: 50px; }
@@ -118,3 +117,25 @@ body {
       .responsive-block .block-copy p span {
         color: #f02f16;
         font-weight: bold; }
+  .responsive-block p.ticker-intro {
+    float: left;
+    margin-right: 10px; }
+  .responsive-block #ticker {
+    text-align: left;
+    margin-left: 307px; }
+    .responsive-block #ticker li {
+      color: #f02f16;
+      font-size: 36px; }
+
+.design-block {
+  background: white;
+  padding-top: 80px; }
+  .design-block p {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 160%; }
+  .design-block .smalltext {
+    font-size: 18px;
+    line-height: 180%; }
+  .design-block img {
+    width: auto; }
