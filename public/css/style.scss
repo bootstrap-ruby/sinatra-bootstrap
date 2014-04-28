@@ -3,6 +3,7 @@ $sans: "Brandon Grotesque", Helvetica, sans-serif;
 $yl: #ffe633;
 $red: #f02f16;
 $lightG: #f0f3f4;
+$vibBlue: #10a7c7;
 
 * {
 	-webkit-box-sizing: border-box;
@@ -11,19 +12,20 @@ $lightG: #f0f3f4;
 }
 
 .navbar {
-	background: transparentize(#000, .5);
+	background: none;
 	z-index: 2;
-	top: 0px;
+	top: 50px;
 	left: 0;
 	border: none;
-	border-bottom: 1px solid transparentize(#fff, .8);
 	color: white;
-	padding: 5px 5% 0;
+	padding: 0 5%;
 	li {
 		text-transform: uppercase;
-		font-weight: bold;
+		font-size: 16px;
+		font-style: italic;
 		a {
 			color: white !important; 
+			padding-top: 12px;
 		}
 	}
 	.navbar-brand {
@@ -31,7 +33,6 @@ $lightG: #f0f3f4;
 		text-indent: -9999px;
 		width: 43px;
 		height: 43px;
-		-webkit-transform: scale(.8);
 	}
 }
 
@@ -42,7 +43,7 @@ body {
 
 .cover {
 	height: 800px;
-	background: url('../images/cover.jpg') no-repeat;
+	background: url('../images/home-bg.jpg') no-repeat;
 	background-size: cover;
 	position: fixed;
 	right: 0;
@@ -53,14 +54,13 @@ body {
 	z-index: -1;
 	h3 {
 		margin-top: 90px;
-		font-family: $sans;
+		font-family: $serif;
 		font-weight: 400;
 		font-style: italic;
-		line-height: 140%;
-		font-size: 28px;
+		line-height: 180%;
+		font-size: 30px;
 	}
 	h1 {
-		
 		margin-top: 40px;
 		text-transform: uppercase;
 		font-weight: bold;
@@ -83,7 +83,7 @@ body {
 	border-top: 10px solid $yl;
 	overflow: auto;
 	width: 100%;	
-	padding-top: 100px;
+	padding-top: 30px;
 }
 
 .section {
@@ -97,6 +97,10 @@ body {
 
 .story-block {
 	padding-bottom: 50px;
+	min-height: 600px;
+	background: white;
+	padding-top: 50px;
+	overflow-x: hidden;
 	p {
 		font-size: 24px;
 		font-weight: 300;
@@ -118,7 +122,6 @@ body {
 }
 
 .invoices-block {
-	height: 550px;
 	padding: 50px 5%;
 	margin-bottom: 0;
 	background: #d75544;
@@ -130,6 +133,7 @@ body {
 		width: auto;
 		position: absolute;
 		margin-left: -50px;
+		-webkit-transition-duration: 1400ms;
 	}
 	.project-title {
 		color: white;
@@ -139,13 +143,31 @@ body {
 		top: 350px;
 		right: 90px;
 	}
+	.js & {
+		img {
+			-webkit-transform: translateY(20px);
+			-webkit-filter: blur(10px);
+			opacity: 0;
+		}
+		
+		
+	}
 }
 
+.invoices-block.visible {
+	.js & {
+		img {
+			-webkit-transform: translateX(0);
+			-webkit-filter: blur(0);
+			opacity: 1;
+		}
+	}
+}
+
+
 .responsive-block {
-	height: 560px;
 	background: $lightG;
 	.block-copy {
-		padding-top: 50px;
 		p {
 			font-size: 36px;
 			span {
@@ -183,5 +205,66 @@ body {
 	}
 	img {
 		width: auto;
+	}
+}
+
+.quote-block {
+ 	padding: 80px 0 50px;
+ 	min-height: 0;
+ 	p {
+		font-size: 30px;
+ 	}
+ 	#call-to-action {
+ 		padding-left: 0;
+ 		li {
+ 			float: left;
+ 			margin-right: 20px;
+ 			a {
+ 				border: 1px solid #ccc;
+ 				display: block;
+ 				padding: 10px 25px;
+ 				border-radius: 4px;
+ 				color: $red;
+ 				text-transform: uppercase;
+ 				font-weight: bold;
+ 				font-size: 14px;
+ 				-webkit-box-sizing: content-box;
+ 				text-shadow: 0px 1px #fff;
+ 			}
+ 			&:first-child a {
+ 				background: $red;
+ 				color: white;
+ 				border: none;
+
+ 			}
+ 		}
+ 	}
+ 	
+}
+
+.more-block {
+	margin-top: 10px;
+	border-left: 1px solid $lightG;
+	padding-left: 20px;
+	.section-title {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $vibBlue;
+		margin-bottom: 5px;
+		display: inline-block;
+	}
+	ul {
+		padding-left: 0;
+		li {
+			h3 {
+				text-transform: uppercase;
+				font-size: 18px;
+				font-weight: 400;
+			}
+			p {
+				font-size: 16px;
+				display: none;
+			}
+		}
 	}
 }

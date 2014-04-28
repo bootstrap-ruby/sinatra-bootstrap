@@ -43,7 +43,7 @@ get '/contact' do
 
 end
 
-get '/work' do
+get '/design-services' do
 	@projects = Project.all(:order => [:created_at.desc])
 	erb :work
 end

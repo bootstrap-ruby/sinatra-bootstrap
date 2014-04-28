@@ -4,9 +4,9 @@ var winH = $(window).height();
 var winW = $(window).width();
 
 $(document).ready(function() {
-	$('.cover').height(winH - 1);
+	$('.cover').height(winH);
 	$('#start').css({ 
-		'marginTop': winH - 5
+		'marginTop': winH
 	});
 	
 	$('#responsive-slides').cycle({
@@ -26,10 +26,14 @@ $(document).ready(function() {
 		
 		if (st < winH) {
 			$('.cover').css({
-				top: 0 - (st / 1.5)	
+				top: 0 - (st / 3)	
 			});
 		}
 	});
+	
+	$('.invoices-block').waypoint(function() {
+		$(this).addClass('visible');
+	}, { offset: '75%' });
 	
 	$(window).load(function() {
 		
