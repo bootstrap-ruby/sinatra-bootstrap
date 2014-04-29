@@ -30,6 +30,10 @@ end
 
 DataMapper.auto_upgrade!
 
+before do 
+	@bodyclass = 'class="default"'
+end
+
 get '/' do
 	@projects = Project.all
   erb :home
@@ -45,6 +49,7 @@ end
 
 get '/design-services' do
 	@projects = Project.all(:order => [:created_at.desc])
+	@bodyclass = 'class="services"'
 	erb :work
 end
 

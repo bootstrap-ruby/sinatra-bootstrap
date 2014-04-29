@@ -11,13 +11,17 @@
   border: none;
   color: white;
   padding: 0 5%; }
-  .navbar li {
+  .navbar .nav li {
     text-transform: uppercase;
     font-size: 16px;
     font-style: italic; }
-    .navbar li a {
-      color: white !important;
+    .navbar .nav li a {
+      color: white;
       padding-top: 12px; }
+      .navbar .nav li a:hover {
+        color: #10a7c7; }
+      .services .navbar .nav li a {
+        color: #f02f16; }
   .navbar .navbar-brand {
     background: url("../images/hc-logo.png") no-repeat;
     text-indent: -9999px;
@@ -41,7 +45,7 @@ body {
   z-index: -1; }
   .cover h3 {
     margin-top: 90px;
-    font-family: "Calluna", Georgia, serif;
+    font-family: "Tisa OT", Georgia, serif;
     font-weight: 400;
     font-style: italic;
     line-height: 180%;
@@ -52,7 +56,7 @@ body {
     font-weight: bold;
     font-size: 42px; }
     .cover h1 span {
-      font-family: "Calluna", Georgia, serif;
+      font-family: "Tisa OT", Georgia, serif;
       text-transform: none;
       font-style: italic; }
   .cover .intro {
@@ -61,7 +65,6 @@ body {
 
 .main-content {
   background: white;
-  border-top: 10px solid #ffe633;
   overflow: auto;
   width: 100%;
   padding-top: 30px; }
@@ -87,7 +90,7 @@ body {
     font-weight: bold;
     margin-bottom: 5px; }
   .story-block .linkout {
-    font-family: "Calluna", Georgia, serif;
+    font-family: "Tisa OT", Georgia, serif;
     font-style: italic; }
     .story-block .linkout a {
       color: inherit; }
@@ -195,3 +198,34 @@ body {
     .more-block ul li p {
       font-size: 16px;
       display: none; }
+
+.services {
+  background: white url(../images/services.jpg) no-repeat top right; }
+  .services p {
+    font-size: 24px;
+    font-weight: 300; }
+  .services strong {
+    color: #10a7c7;
+    font-weight: 400; }
+  .services .main-content {
+    background: transparent; }
+    .services .main-content h3 {
+      text-transform: uppercase;
+      font-style: italic;
+      font-weight: bold; }
+  .services .navbar {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px; }
+  .services .page-title {
+    font-size: 60px;
+    font-family: "Tisa OT", Georgia, serif;
+    font-style: italic;
+    color: #f02f16;
+    margin-top: 200px;
+    font-weight: bold;
+    text-shadow: 0px 1px #fff;
+    margin-bottom: 50px; }
+  .services .intro-section {
+    margin-bottom: 100px; }
