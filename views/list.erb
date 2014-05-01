@@ -4,6 +4,11 @@
 <% @projects.each_with_index do |project,i| %>
 	<tr<%= ' class="alt"' if i%2==0 %>>
 	  <td><a href="/show/<%= project.id %>"><%= project.name %></a></td>
-		<td><a href="/delete/<%= project.id %>">delete</a></td>
+		<td>  
+			<form action="/<%= project.id %>" method="post">
+		  		<input type="hidden" name="_method" value="delete">
+			  	<input type="submit" value="Yes, Delete">
+		    </form>
+		 </td>
 <% end %>
 </table>

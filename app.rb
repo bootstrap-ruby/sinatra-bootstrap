@@ -15,14 +15,13 @@ class Project
 	property :id, 			Serial
 	property :name,			String
 	property :description,  String
-	property :filename,		String
 	property :thumbnail, 	String
+	property :filename,		String
 	property :created_at,   DateTime
 	property :updated_at, 	DateTime
 	
 	def handle_upload( file )
-		slug = self.name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-		path = File.join(Dir.pwd, "/public/projects", self.filename)
+		path = File.join(Dir.pwd, "/public/projects", file[:filename])
 		File.open(path, "wb") do |f|
 			f.write(file[:tempfile].read)
 		end
@@ -65,6 +64,7 @@ end
 post '/create' do
 	@project = Project.new(params[:project])
 	@project.handle_upload(params[:image])
+	@project.filename = params[:image][:filename]
 	if @project.save
 		redirect "/show/#{@project.id}"
 	else
@@ -79,4 +79,10 @@ get '/show/:id' do
 	else
 		redirect('/list')
 	end
+end
+
+delete '/:id' do
+	@p = Project.get(params[:id])
+	@p.destroy
+	redirect '/list'
 end
