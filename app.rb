@@ -21,6 +21,7 @@ class Project
 	property :updated_at, 	DateTime
 	
 	def handle_upload( file )
+		slug = self.name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
 		path = File.join(Dir.pwd, "/public/projects", self.filename)
 		File.open(path, "wb") do |f|
 			f.write(file[:tempfile].read)

@@ -139,6 +139,18 @@ body {
     .responsive-block #ticker li {
       color: #f02f16;
       font-size: 36px; }
+  .responsive-block .project-linkout {
+    z-index: 20;
+    position: absolute;
+    right: 0;
+    bottom: 20px; }
+
+#responsive-slides {
+  height: 430px; }
+  #responsive-slides li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
 
 .design-block {
   background: white;

@@ -196,7 +196,24 @@ body {
 			font-size: 36px;
 		}
 	}
+	.project-linkout {
+		z-index: 20;
+		position: absolute;
+		right: 0;
+		bottom: 20px;
+	}
 }
+
+#responsive-slides {
+	height: 430px;
+	li {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+
 
 .design-block {
 	background: white;
