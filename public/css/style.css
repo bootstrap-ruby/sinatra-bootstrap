@@ -229,3 +229,21 @@ body {
     margin-bottom: 50px; }
   .services .intro-section {
     margin-bottom: 100px; }
+
+.bts {
+  background: whitesmoke url("../images/bts.jpg") no-repeat left top;
+  background-size: cover; }
+  .bts .navbar {
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0; }
+    .bts .navbar li {
+      font-weight: bold; }
+
+.video-intro {
+  color: white;
+  text-align: center;
+  margin-top: 25%;
+  font-size: large; }

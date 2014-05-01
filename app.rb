@@ -16,9 +16,9 @@ class Project
 	property :name,			String
 	property :description,  String
 	property :filename,		String
+	property :thumbnail, 	String
 	property :created_at,   DateTime
 	property :updated_at, 	DateTime
-	property :is_active,	Boolean
 	
 	def handle_upload( file )
 		path = File.join(Dir.pwd, "/public/projects", self.filename)
@@ -39,12 +39,9 @@ get '/' do
   erb :home
 end
 
-get '/community' do
-	erb "hey"
-end
-
 get '/contact' do
-
+	@bodyclass = 'class="bts"'
+	erb :contact
 end
 
 get '/design-services' do

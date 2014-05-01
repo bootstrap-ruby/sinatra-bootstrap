@@ -315,3 +315,25 @@ body {
 		margin-bottom: 100px;
 	}
 }
+
+.bts {
+	background: #f5f5f5 url('../images/bts.jpg') no-repeat left top;
+	background-size: cover;
+	.navbar {
+		top: 0;
+		background: transparentize(#000, .2);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-radius: 0;
+		li {
+			font-weight: bold;
+		}
+	}
+}
+
+.video-intro {
+	color: white;
+	text-align: center;
+	margin-top: 25%;
+	font-size: large;
+}
