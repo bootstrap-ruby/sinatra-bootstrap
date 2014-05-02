@@ -215,7 +215,7 @@ body {
   background: white url(../images/services.jpg) no-repeat top right; }
   .services p {
     font-size: 18px;
-    line-height: 150%;
+    line-height: 30px;
     font-family: "Tisa OT", Georgia, serif;
     font-weight: 300;
     color: #333333; }
@@ -227,7 +227,9 @@ body {
       text-transform: uppercase;
       font-weight: 200;
       font-size: 32px;
-      color: #10a7c7; }
+      color: #10a7c7;
+      line-height: 42px;
+      margin-top: 0; }
   .services .navbar {
     width: 1170px;
     margin-left: auto;
@@ -242,12 +244,11 @@ body {
     font-weight: bold;
     text-shadow: 0px 1px #fff;
     margin-bottom: 50px; }
-  .services .intro-section {
-    margin-bottom: 100px !important; }
-    .services .intro-section p {
-      font-size: 24px; }
+  .services .intro-section p {
+    font-size: 24px;
+    line-height: 36px; }
   .services .section {
-    margin-bottom: 70px; }
+    margin-bottom: 100px; }
     .services .section img {
       width: auto; }
 

@@ -299,7 +299,7 @@ body {
 	background: white url(../images/services.jpg) no-repeat top right;
 	p {
 		font-size: 18px;
-		line-height: 150%;
+		line-height: 30px;
 		font-family: $serif;
 		font-weight: 300;
 		color: $dark;
@@ -314,6 +314,8 @@ body {
 			font-weight: 200;
 			font-size: 32px;
 			color: $vibBlue;
+			line-height: 42px;
+			margin-top: 0;
 		}
 	}
 	.navbar {
@@ -333,13 +335,13 @@ body {
 		margin-bottom: 50px;
 	}
 	.intro-section {
-		margin-bottom: 100px !important;
 		p {
 			font-size: 24px;
+			line-height: 36px;
 		}
 	}
 	.section {
-		margin-bottom: 70px;
+		margin-bottom: 100px;
 		img {
 			width: auto;
 		}
