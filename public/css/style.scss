@@ -298,19 +298,22 @@ body {
 .services {	
 	background: white url(../images/services.jpg) no-repeat top right;
 	p {
-		font-size: 24px;
+		font-size: 18px;
+		line-height: 150%;
+		font-family: $serif;
 		font-weight: 300;
+		color: $dark;
 	}
 	strong {
-		color: $vibBlue;
 		font-weight: 400;
 	}
 	.main-content {
 		background: transparent;
 		h3 {
 			text-transform: uppercase;
-			font-style: italic;
-			font-weight: bold;
+			font-weight: 200;
+			font-size: 32px;
+			color: $vibBlue;
 		}
 	}
 	.navbar {
@@ -331,6 +334,9 @@ body {
 	}
 	.intro-section {
 		margin-bottom: 100px !important;
+		p {
+			font-size: 24px;
+		}
 	}
 	.section {
 		margin-bottom: 70px;
