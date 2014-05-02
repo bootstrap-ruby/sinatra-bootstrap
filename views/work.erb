@@ -10,7 +10,9 @@
 		</div>
 		
 		<div class="row section">
-			<div class="col-md-6"></div>
+			<div class="col-md-6 text-center">
+				<img src="images/web-design.png" width="484" height="243" alt="" />
+			</div>
 			<div class="col-md-6">
 				<h3>Web Design and Development</h3>
 				<p>Our core business is the production of websites. Proficient in the arts of not just design and information architecture, but writing code for various platforms, including <strong>content management systems</strong>, <strong>ecommerce platforms</strong>, visually interactive static <strong>portfolio designs</strong>, or even convert PSD renders to HTML.</p>
@@ -23,20 +25,28 @@
 			</div>
 			<div class="col-md-6"></div>
 		</div>
+		<div class="text-center col-md-6 col-md-offset-3">
+			<p>We do our best to deliver a product that makes our clients want to flaunt it.</p>
+		</div>
 	</div>
 </div>
 
 
-<div class="container">
-	<h3>We do our best to deliver a product that makes our clients want to flaunt it.</h3>
+<div class="container project-list">
+	
 	<div class="row section">
 		<% @projects.each_with_index do |project,i| %>
 			<div class="col-md-4">
-			  	  <div class="col-md-12">
+			  	  <div class="col-md-12 img-block">
 			  	  	<img src="/projects/<%= project.filename %>" />
 			  	  </div>
-			  	  <div class="col-md-12">
-			  	  	<h3><a href="/show/<%= project.id %>"><%= project.name %></a></h3>
+			  	  <div class="col-md-12 text-block">
+			  	  	<header>
+			  	  		<h4><%= project.name %></h4>
+			  	  		<span><a href="<%= project.url %>">Visit Link</a></span>
+			  	  	</header>
+			  	  	
+			  	  	<p><%= project.description %></p>
 			  	  </div>
 			</div>
 		<% end %>

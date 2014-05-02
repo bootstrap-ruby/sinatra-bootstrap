@@ -240,7 +240,11 @@ body {
     text-shadow: 0px 1px #fff;
     margin-bottom: 50px; }
   .services .intro-section {
-    margin-bottom: 100px; }
+    margin-bottom: 100px !important; }
+  .services .section {
+    margin-bottom: 70px; }
+    .services .section img {
+      width: auto; }
 
 .bts {
   background: whitesmoke url("../images/bts.jpg") no-repeat left top;
@@ -259,3 +263,41 @@ body {
   text-align: center;
   margin-top: 25%;
   font-size: large; }
+
+.project-list {
+  margin-top: 100px;
+  margin-bottom: 50px; }
+  .project-list .img-block {
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-radius: 4px; }
+    .project-list .img-block img {
+      width: 100%; }
+  .project-list .text-block header {
+    margin-top: 10px; }
+    .project-list .text-block header h4 {
+      color: #10a7c7;
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 20px;
+      margin-right: 5px;
+      display: inline-block;
+      margin-bottom: 5px; }
+    .project-list .text-block header span {
+      text-transform: uppercase;
+      display: inline-block;
+      border: 1px solid #fcdad6;
+      padding: 2px 5px;
+      -webkit-transform: translateY(-2px);
+      margin-bottom: 5px;
+      border-radius: 5px;
+      font-size: 10px;
+      color: #333333; }
+      .project-list .text-block header span a {
+        color: inherit; }
+  .project-list .text-block p {
+    font-size: 16px;
+    font-family: "Tisa OT", Georgia, serif;
+    font-weight: normal;
+    color: #666; }
