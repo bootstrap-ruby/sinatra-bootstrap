@@ -26,6 +26,12 @@ class Project
 			f.write(file[:tempfile].read)
 		end
 	end
+	def handle_upload2( file )
+		path = File.join(Dir.pwd, "/public/projects", file[:filename])
+		File.open(path, "wb") do |f|
+			f.write(file[:tempfile].read)
+		end
+	end
 end
 
 DataMapper.auto_upgrade!
@@ -64,7 +70,9 @@ end
 post '/create' do
 	@project = Project.new(params[:project])
 	@project.handle_upload(params[:image])
+	@project.handle_upload2(params[:thumb])
 	@project.filename = params[:image][:filename]
+	@project.thumbnail = params[:thumb][:filename]
 	if @project.save
 		redirect "/show/#{@project.id}"
 	else
