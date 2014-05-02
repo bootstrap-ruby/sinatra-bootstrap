@@ -20,16 +20,14 @@ class Project
 	property :created_at,   DateTime
 	property :updated_at, 	DateTime
 	
-	def handle_upload( file )
+	def handle_upload( file , thumb )
 		path = File.join(Dir.pwd, "/public/projects", file[:filename])
 		File.open(path, "wb") do |f|
 			f.write(file[:tempfile].read)
 		end
-	end
-	def handle_upload2( file )
-		path = File.join(Dir.pwd, "/public/projects", file[:filename])
-		File.open(path, "wb") do |f|
-			f.write(file[:tempfile].read)
+		thumbpath = File.join(Dir.pwd, "/public/projects/thumbnails", thumb[:filename])
+		File.open(thumbpath, "wb") do |f|
+			f.write(thumb[:tempfile].read)
 		end
 	end
 end
@@ -69,8 +67,7 @@ end
 
 post '/create' do
 	@project = Project.new(params[:project])
-	@project.handle_upload(params[:image])
-	@project.handle_upload2(params[:thumb])
+	@project.handle_upload(params[:image], params[:thumb])
 	@project.filename = params[:image][:filename]
 	@project.thumbnail = params[:thumb][:filename]
 	if @project.save
