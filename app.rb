@@ -15,19 +15,14 @@ class Project
 	property :id, 			Serial
 	property :name,			String
 	property :description,  String
-	property :thumbnail, 	String
 	property :filename,		String
 	property :created_at,   DateTime
 	property :updated_at, 	DateTime
 	
-	def handle_upload( file , thumb )
+	def handle_upload( file )
 		path = File.join(Dir.pwd, "/public/projects", file[:filename])
 		File.open(path, "wb") do |f|
 			f.write(file[:tempfile].read)
-		end
-		thumbpath = File.join(Dir.pwd, "/public/projects/thumbnails", thumb[:filename])
-		File.open(thumbpath, "wb") do |f|
-			f.write(thumb[:tempfile].read)
 		end
 	end
 end
@@ -67,9 +62,8 @@ end
 
 post '/create' do
 	@project = Project.new(params[:project])
-	@project.handle_upload(params[:image], params[:thumb])
+	@project.handle_upload(params[:image])
 	@project.filename = params[:image][:filename]
-	@project.thumbnail = params[:thumb][:filename]
 	if @project.save
 		redirect "/show/#{@project.id}"
 	else
@@ -80,7 +74,7 @@ end
 get '/show/:id' do
 	@project = Project.get(params[:id])
 	if @project
-		erb :show
+		erb :show, :layout => false
 	else
 		redirect('/list')
 	end
