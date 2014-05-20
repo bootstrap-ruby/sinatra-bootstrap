@@ -167,7 +167,8 @@ body {
 
 .quote-block {
   padding: 80px 0 50px;
-  min-height: 0; }
+  min-height: 0;
+  background: #fafafa; }
   .quote-block p {
     font-size: 30px; }
   .quote-block #call-to-action {
@@ -243,14 +244,21 @@ body {
     margin-top: 200px;
     font-weight: bold;
     text-shadow: 0px 1px #fff;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
   .services .intro-section p {
-    font-size: 24px;
-    line-height: 36px; }
+    font-size: 22px;
+    line-height: 36px;
+    color: #333; }
   .services .section {
     margin-bottom: 100px; }
     .services .section img {
       width: auto; }
+  .services .last-line p {
+    font-family: "Tisa OT", Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px; }
 
 .bts {
   background: whitesmoke url("../images/bts.jpg") no-repeat left top;
@@ -307,3 +315,21 @@ body {
     font-family: "Tisa OT", Georgia, serif;
     font-weight: normal;
     color: #666; }
+
+.better-world-block {
+  font-family: "Tisa OT", Georgia, serif; }
+  .better-world-block h3 {
+    font-size: 60px;
+    font-family: "Tisa OT", Georgia, serif;
+    /*font-style: italic;*/
+    margin-bottom: 10px; }
+  .better-world-block .lead {
+    font-style: italic; }
+  .better-world-block h4 {
+    font-size: 32px;
+    color: #f02f16; }
+  .better-world-block p {
+    font-size: 18px;
+    line-height: 160%; }
+  .better-world-block .block {
+    margin-bottom: 50px; }

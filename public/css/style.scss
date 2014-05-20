@@ -236,6 +236,7 @@ body {
 .quote-block {
  	padding: 80px 0 50px;
  	min-height: 0;
+ 	background: #fafafa;
  	p {
 		font-size: 30px;
  	}
@@ -332,18 +333,28 @@ body {
 		margin-top: 200px;
 		font-weight: bold;
 		text-shadow: 0px 1px #fff;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 	.intro-section {
 		p {
-			font-size: 24px;
+			font-size: 22px;
 			line-height: 36px;
+			color: #333;
 		}
 	}
 	.section {
 		margin-bottom: 100px;
 		img {
 			width: auto;
+		}
+	}
+	.last-line {
+		p {
+			font-family: $serif;
+			font-style: italic;
+			font-size: 22px;
+			border-bottom: 1px solid #ddd;
+			padding-bottom: 20px;
 		}
 	}
 }
@@ -416,5 +427,29 @@ body {
 			font-weight: normal;
 			color: #666;
 		}
+	}
+}
+
+.better-world-block {
+	font-family: $serif;
+	h3 {
+		font-size: 60px;
+		font-family: $serif;
+		/*font-style: italic;*/
+		margin-bottom: 10px;
+	}
+	.lead {
+		font-style: italic;
+	}
+	h4 {
+		font-size: 32px;
+		color: $red;
+	}
+	p {
+		font-size: 18px;
+		line-height: 160%;
+	}
+	.block {
+		margin-bottom: 50px;
 	}
 }
