@@ -1,11 +1,17 @@
 require 'rubygems'
 require 'sinatra'
+require 'mysql'
 require 'data_mapper'
 require 'sqlite3'
 
 
 configure :development do
 	DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/projects.db")
+end
+
+configure :production do
+	require 'dm-mysql-adapter'
+	DataMapper.setup(:default, 'mysql://root:hash2014@127.0.0.1/HashCookSinatra')
 end
 
 class Project
