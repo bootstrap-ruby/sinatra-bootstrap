@@ -22,6 +22,7 @@ class Project
 	property :name,			String
 	property :description,  String
 	property :filename,		String
+	property :url,			String
 	property :created_at,   DateTime
 	property :updated_at, 	DateTime
 	

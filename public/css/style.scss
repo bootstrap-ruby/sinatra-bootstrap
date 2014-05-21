@@ -4,6 +4,7 @@ $yl: #ffe633;
 $red: #f02f16;
 $lightG: #f0f3f4;
 $vibBlue: #10a7c7;
+$dark: #333;
 
 * {
 	-webkit-box-sizing: border-box;
@@ -297,19 +298,24 @@ body {
 .services {	
 	background: white url(../images/services.jpg) no-repeat top right;
 	p {
-		font-size: 24px;
+		font-size: 18px;
+		line-height: 30px;
+		font-family: $serif;
 		font-weight: 300;
+		color: $dark;
 	}
 	strong {
-		color: $vibBlue;
 		font-weight: 400;
 	}
 	.main-content {
 		background: transparent;
 		h3 {
 			text-transform: uppercase;
-			font-style: italic;
-			font-weight: bold;
+			font-weight: 200;
+			font-size: 32px;
+			color: $vibBlue;
+			line-height: 42px;
+			margin-top: 0;
 		}
 	}
 	.navbar {
@@ -329,7 +335,16 @@ body {
 		margin-bottom: 50px;
 	}
 	.intro-section {
+		p {
+			font-size: 24px;
+			line-height: 36px;
+		}
+	}
+	.section {
 		margin-bottom: 100px;
+		img {
+			width: auto;
+		}
 	}
 }
 
@@ -353,4 +368,53 @@ body {
 	text-align: center;
 	margin-top: 25%;
 	font-size: large;
+}
+
+.project-list {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	.img-block {
+		padding: 0;
+		overflow: hidden;
+		border: 1px solid #eee;
+		border-radius: 4px;
+		img {
+			width: 100%;
+		}
+	}
+	.text-block {
+		header {
+			margin-top: 10px;
+			h4 {
+				color: $vibBlue;
+				text-transform: uppercase;
+				font-weight: 200;
+				font-size: 20px;
+				margin-right: 5px;
+				display: inline-block;
+				margin-bottom: 5px;
+			}
+			span {
+				text-transform: uppercase;
+				display: inline-block;
+				border: 1px solid lighten($red, 40%);
+				padding: 2px 5px;
+				-webkit-transform: translateY(-2px);
+				margin-bottom: 5px;
+				border-radius: 5px;
+				font-size: 10px;
+				color: $dark;
+				a {
+					color: inherit;
+				}
+			}
+		}
+		
+		p {
+			font-size: 16px;
+			font-family: $serif;
+			font-weight: normal;
+			color: #666;
+		}
+	}
 }
