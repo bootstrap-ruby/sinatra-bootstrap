@@ -212,53 +212,54 @@ body {
       font-size: 16px;
       display: none; }
 
-.services {
-  background: white url(../images/services.jpg) no-repeat top right; }
-  .services p {
-    font-size: 18px;
-    line-height: 30px;
-    font-family: "Tisa OT", Georgia, serif;
-    font-weight: 300;
-    color: #333333; }
-  .services strong {
-    font-weight: 400; }
-  .services .main-content {
-    background: transparent; }
-    .services .main-content h3 {
-      text-transform: uppercase;
-      font-weight: 200;
-      font-size: 32px;
-      color: #10a7c7;
-      line-height: 42px;
-      margin-top: 0; }
-  .services .navbar {
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px; }
-  .services .page-title {
-    font-size: 60px;
-    font-family: "Tisa OT", Georgia, serif;
-    font-style: italic;
-    color: #f02f16;
-    margin-top: 200px;
-    font-weight: bold;
-    text-shadow: 0px 1px #fff;
-    margin-bottom: 30px; }
+.services p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Tisa OT", Georgia, serif;
+  font-weight: 300;
+  color: #053039; }
+.services strong {
+  font-weight: 400; }
+.services .main-content h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 32px;
+  color: #10a7c7;
+  line-height: 42px;
+  margin-top: 0; }
+.services .intro-section {
+  position: relative; }
   .services .intro-section p {
-    font-size: 22px;
-    line-height: 36px;
-    color: #333; }
-  .services .section {
-    margin-bottom: 100px; }
-    .services .section img {
-      width: auto; }
+    font-size: 18px;
+    color: #053039; }
+  .services .intro-section .page-title {
+    font-size: 48px;
+    line-height: 120%;
+    font-family: "Brandon Grotesque", Helvetica, sans-serif;
+    color: #10a7c7;
+    font-weight: 600;
+    position: fixed;
+    bottom: 450px;
+    z-index: 100;
+    width: 500px;
+    top: 120px; }
+  .services .intro-section #learn-more {
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 50px; }
+.services .last-line {
+  display: none; }
   .services .last-line p {
     font-family: "Tisa OT", Georgia, serif;
     font-style: italic;
     font-size: 22px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    color: #053039; }
+.services .services-block {
+  position: fixed;
+  bottom: 10px;
+  margin-bottom: 0;
+  opacity: 0; }
 
 .bts {
   background: whitesmoke url("../images/bts.jpg") no-repeat left top;
@@ -279,7 +280,7 @@ body {
   font-size: large; }
 
 .project-list {
-  margin-top: 100px;
+  margin-top: 2500px;
   margin-bottom: 50px; }
   .project-list .img-block {
     padding: 0;
@@ -333,3 +334,18 @@ body {
     line-height: 160%; }
   .better-world-block .block {
     margin-bottom: 50px; }
+
+#units {
+  position: fixed;
+  z-index: 100;
+  bottom: 0; }
+
+#browser {
+  width: 1041px;
+  height: 678px;
+  background: url("../images/browser.png") no-repeat;
+  position: fixed;
+  z-index: 10;
+  top: 120px;
+  right: -400px;
+  -webkit-transform-origin: top right; }

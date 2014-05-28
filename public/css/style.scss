@@ -87,6 +87,8 @@ body {
 	}
 }
 
+
+
 .main-content {
 	background: white;
 	overflow: auto;
@@ -295,21 +297,22 @@ body {
 	}
 }
 
+#services-container {
+	
+}
 
 .services {	
-	background: white url(../images/services.jpg) no-repeat top right;
 	p {
 		font-size: 18px;
 		line-height: 30px;
 		font-family: $serif;
 		font-weight: 300;
-		color: $dark;
+		color: darken($vibBlue, 30%);
 	}
 	strong {
 		font-weight: 400;
 	}
 	.main-content {
-		background: transparent;
 		h3 {
 			text-transform: uppercase;
 			font-weight: 200;
@@ -319,43 +322,46 @@ body {
 			margin-top: 0;
 		}
 	}
-	.navbar {
-		width: 1170px;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 0 15px;
-	}
-	.page-title {
-		font-size: 60px;
-		font-family: $serif;
-		font-style: italic;
-		color: $red;
-		margin-top: 200px;
-		font-weight: bold;
-		text-shadow: 0px 1px #fff;
-		margin-bottom: 30px;
-	}
+	
 	.intro-section {
+		position: relative;
 		p {
-			font-size: 22px;
-			line-height: 36px;
-			color: #333;
+			font-size: 18px;
+			color: darken($vibBlue, 30%);
 		}
-	}
-	.section {
-		margin-bottom: 100px;
-		img {
-			width: auto;
+		.page-title {
+			font-size: 48px;
+			line-height: 120%;
+			font-family: $sans;
+			color: #10a7c7;
+			font-weight: 600;
+			position: fixed;
+			bottom: 450px;
+			z-index: 100;
+			width: 500px;
+			top: 120px;
+		}
+		#learn-more {
+			text-transform: uppercase;
+			position: fixed;
+			bottom: 50px;
 		}
 	}
 	.last-line {
+		display: none;
 		p {
 			font-family: $serif;
 			font-style: italic;
 			font-size: 22px;
-			border-bottom: 1px solid #ddd;
 			padding-bottom: 20px;
+			color: darken($vibBlue, 30%);
 		}
+	}
+	.services-block {
+		position: fixed;
+		bottom: 10px;
+		margin-bottom: 0;
+		opacity: 0;
 	}
 }
 
@@ -382,7 +388,7 @@ body {
 }
 
 .project-list {
-	margin-top: 100px;
+	margin-top: 2500px;
 	margin-bottom: 50px;
 	.img-block {
 		padding: 0;
@@ -452,4 +458,21 @@ body {
 	.block {
 		margin-bottom: 50px;
 	}
+}
+
+#units {
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+}
+
+#browser {
+	width: 1041px;
+	height: 678px;
+	background: url('../images/browser.png') no-repeat;
+	position: fixed;
+	z-index: 10;
+	top: 120px;
+	right: -400px;
+	-webkit-transform-origin: top right;
 }
