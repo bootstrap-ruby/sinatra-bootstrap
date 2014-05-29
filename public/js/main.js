@@ -60,7 +60,6 @@ $(document).ready(function() {
 	$(window).scroll(function() {
 		var st = $(window).scrollTop();
 		var brLeft = st / 1.5;
-		console.log(st);
 		
 		if (st < winH) {
 			$('.cover').css({
@@ -72,11 +71,11 @@ $(document).ready(function() {
 		
 		$('#learn-more').css({
 			opacity: 1 - (st / 200),
-			webkitTransform: 'translateY(' + (0 + (st / 5)) + 'px)'
+			translate: [0, 0 + (st / 5)]
 		});
 		
 		$serTit.css({
-			webkitTransform: 'translateY(' + (0 - (st / 5)) + 'px)',
+			translate: [0, 0 - (st / 5)],
 			opacity: 1 - (st / 300)
 		});
 
@@ -86,21 +85,21 @@ $(document).ready(function() {
 
 		if (st > winH) {
 			$sb1.css({
-				webkitTransform: 'translateY(' + (0 - (st / 10)) + 'px)',
+				translate: [0, 0 - (st / 10)],
 				opacity: 0 + ((st - winH) / 300)
 			});
 			
 			if (st < (winH + (winW / 1.95))) {
 				$ipad.css({
-					webkitTransform: 'translateX(' + (0 - ((st - winH) / 1.3)) + 'px)'
+					translate: [0 - ((st - winH) / 1.3), 0]
 				});
 				
 				$iphone.css({
-					webkitTransform: 'translateX(' + (0 - (st - winH)) + 'px)'
+					translate: [0 - (st - winH), 0]
 				});
 				
 				$br.css({
-					webkitTransform: 'scale(' + (1 - ((st - winH) / 10000)) + ')'
+					scale: 1 - ((st - winH) / 10000)
 				});
 			}
 			
@@ -125,10 +124,8 @@ $(document).ready(function() {
 			});
 			
 			
-			var matrix = $br.css('-webkit-transform').match(/-?[0-9\.]+/g);
-			
 			$br.css({
-				webkitTransform: 'scale(' + matrix[0] + ') translateX(' + (0 + newt) + 'px)'
+				translate: [0 + newt, 0]
 			});
 
 		}
@@ -142,13 +139,14 @@ $(document).ready(function() {
 			} else {scale = 1}
 			
 			$sb2.css({
-				webkitTransform: 'translateY(' + (0 - (newt / 10)) + 'px)',
+				translate: [0, 0 - (newt / 10)],
 				opacity: 0 + (newt / 300)
 			});
 			
 			$soc.css({
 				opacity: 0 + (newt / 400),
-				webkitTransform: 'scale(' + scale + ') translateY(' + (0 - (newt / 50)) + 'px)'
+				scale: scale,
+				translate: [0, 0 - (newt / 50)]
 			});
 		}
 		
@@ -158,13 +156,13 @@ $(document).ready(function() {
 			var matrix = $sb2.css('-webkit-transform').match(/-?[0-9\.]+/g);
 			
 			$sb2.css({
-				webkitTransform: 'translateY(' + (matrix[5] - (newt * 1.5)) + 'px)'
+				translate: [0, matrix[5] - (newt * 1.5)]
 			});
 			
 			var matrix = $soc.css('-webkit-transform').match(/-?[0-9\.]+/g);
 			
 			$soc.css({
-				webkitTransform: 'scale(1) translateY(' + (matrix[5] - newt) + 'px)'
+				translate: [0, matrix[5] - newt]
 			});
 		}
 		
@@ -181,7 +179,7 @@ $(document).ready(function() {
 		
 		if (st > winH + 3500) {
 			$sb3.css({
-				webkitTransform: 'translateY(' + (0 - (st - (winH + 3500))) + 'px)'
+				translate: [0, 0 - (st - (winH + 3500))]
 			});
 			
 		}
