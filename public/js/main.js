@@ -31,8 +31,12 @@ $(document).ready(function() {
 		bottom: (winH - 231) / 2
 	});
 	
-	$ipad.add($iphone).css({
+	$ipad.css({
 		left: winW
+	});
+	
+	$iphone.css({
+		left: winW + 200
 	});
 	
 
@@ -95,7 +99,7 @@ $(document).ready(function() {
 				});
 				
 				$iphone.css({
-					translate: [0 - (st - winH), 0]
+					translate: [0 - ((st - winH) * 1.2), 0]
 				});
 				
 				$br.css({
