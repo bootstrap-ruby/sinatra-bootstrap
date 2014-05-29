@@ -5,6 +5,8 @@ $red: #f02f16;
 $lightG: #f0f3f4;
 $vibBlue: #10a7c7;
 $dark: #333;
+$muteBlue: #81b7c1;
+
 
 * {
 	-webkit-box-sizing: border-box;
@@ -32,7 +34,7 @@ $dark: #333;
 					color: $vibBlue;
 				}
 				.services & {
-					color: $red;
+					color: $muteBlue;
 				}
 			}
 		}
@@ -297,10 +299,6 @@ body {
 	}
 }
 
-#services-container {
-	
-}
-
 .services {	
 	p {
 		font-size: 18px;
@@ -347,21 +345,36 @@ body {
 			bottom: 50px;
 		}
 	}
-	.last-line {
-		display: none;
-		p {
-			font-family: $serif;
-			font-style: italic;
-			font-size: 22px;
-			padding-bottom: 20px;
-			color: darken($vibBlue, 30%);
-		}
-	}
 	.services-block {
 		position: fixed;
 		bottom: 10px;
+		z-index: 4;
 		margin-bottom: 0;
 		opacity: 0;
+	}
+	#services-block-2 {
+		margin-bottom: 100px;
+	}
+	#services-block-3 {
+		position: fixed;
+		
+		z-index: 150;
+		bottom: 25%;
+		left: 10%;
+		width: 700px;
+		opacity: 0;
+		p {
+			font-size: 42px;
+			line-height: 120%;
+			font-style: italic;
+			color: $dark;
+		}
+		#rule {
+			width: 0px;
+			height: 1px;
+			margin: 30px auto 0;
+			background-color: $muteBlue;
+		}
 	}
 }
 
@@ -388,7 +401,7 @@ body {
 }
 
 .project-list {
-	margin-top: 2500px;
+	margin-top: 3900px;
 	margin-bottom: 50px;
 	.img-block {
 		padding: 0;
@@ -472,7 +485,38 @@ body {
 	background: url('../images/browser.png') no-repeat;
 	position: fixed;
 	z-index: 10;
-	top: 120px;
+	bottom: -140px;
 	right: -400px;
 	-webkit-transform-origin: top right;
+}
+
+#ipad {
+	width: 351px;
+	height: 466px;
+	background:  url('../images/ipad.png') no-repeat left top;
+	position: fixed;
+	z-index: 13;
+	bottom: -1px;
+}
+
+#iphone {
+	width: 214px;
+	height: 393px;
+	background: url('../images/iphone.png') no-repeat left top;
+	position: fixed;
+	z-index: 15;
+	bottom: -1px;
+	right: 0;
+}
+
+#social {
+	width: 418px;
+	height: 231px;
+	background: url('../images/social.png') no-repeat left top;
+	position: fixed;
+	z-index: 20;
+	bottom: 50px;
+	right: 0;
+	opacity: 0;
+	-webkit-transform: scale(0.5);
 }
