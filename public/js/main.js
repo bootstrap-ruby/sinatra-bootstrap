@@ -48,17 +48,22 @@ $(document).ready(function() {
 	
 	var $serTit = $('#services-title');
 	
-	$serTit.css({
-		top: winH / 3
-	})
-	
 	var $sb1 = $('#services-block-1');
 	var $sb2 = $('#services-block-2');
 	var $sb3 = $('#services-block-3');
 	
+	$sb2.css({
+		bottom: ((winH - 200) / 2) - 70
+	});
+	
 	$sb3.css({
 		left: (winW - 700) / 2,
 		bottom: (winH - 140) / 2
+	});
+	
+	$('#learn-more a').click(function() {
+		$.scrollTo(1200, 1800);
+		return false;
 	});
 	
 	$(window).scroll(function() {
@@ -83,40 +88,44 @@ $(document).ready(function() {
 			opacity: 1 - (st / 300)
 		});
 
-		if (st < winH) {
-			$sb1.add($sb2).css({ opacity: 0 });
+		if (st < 800) {
+			$sb1.css({ opacity: 0 });
 		}
 
-		if (st > winH) {
-			$sb1.css({
-				translate: [0, 0 - (st / 10)],
-				opacity: 0 + ((st - winH) / 300)
-			});
-			
-			if (st < (winH + (winW / 1.95))) {
+		if (st > 500) {
+						
+			if (st < (500 + (winW / 1.95))) {
 				$ipad.css({
-					translate: [0 - ((st - winH) / 1.3), 0]
+					translate: [0 - ((st - 500) / 1.3), 0]
 				});
 				
 				$iphone.css({
-					translate: [0 - ((st - winH) * 1.2), 0]
+					translate: [0 - ((st - 500) * 1.2), 0]
 				});
 				
 				$br.css({
-					scale: 1 - ((st - winH) / 10000)
+					scale: 1 - ((st - 500) / 10000)
 				});
 			}
 			
 		}
 		
-		if (st > (winH + 700)) {
+		if (st > 800) {
 			$sb1.css({
-				opacity: 1 - ((st - (winH + 700)) / 300)
+				translate: [0, 0 - (st / 10)],
+				opacity: 0 + ((st - 800) / 300)
+			});
+			
+		}
+		
+		if (st > 1200) {
+			$sb1.css({
+				opacity: 1 - ((st - 1200) / 300)
 			});
 		}
 		
-		if (st > (winH + 1000)) {
-			var newt = st - (winH + 1000);
+		if (st > 1500) {
+			var newt = st - 1500;
 			
 
 			$ipad.css({
@@ -134,8 +143,12 @@ $(document).ready(function() {
 
 		}
 		
-		if (st > winH + 1400) {
-			var newt = st - (winH + 1400);
+		if (st < 1900) {
+			$sb2.add($soc).css({ opacity: 0 });
+		}
+		
+		if (st > 1900) {
+			var newt = st - 1900;
 			var scale;
 			
 			if ((0.5 + (newt / 400)) < 1) {
@@ -154,8 +167,8 @@ $(document).ready(function() {
 			});
 		}
 		
-		if (st > (winH + 2400)) {
-			var newt = st - (winH + 2400)
+		if (st > 2900) {
+			var newt = st - 2900
 			
 			var matrix = $sb2.css('-webkit-transform').match(/-?[0-9\.]+/g);
 			
@@ -170,8 +183,8 @@ $(document).ready(function() {
 			});
 		}
 		
-		if (st > winH + 3000 && st < winH + 3400) {
-			var newt = st - (winH + 3000);
+		if (st > 3500 && st < 3900) {
+			var newt = st - (3500);
 			
 			$sb3.css({
 				opacity: 0 + (newt / 100)
@@ -181,9 +194,15 @@ $(document).ready(function() {
 			$sb3.find('#rule').width(newt);
 		}
 		
-		if (st > winH + 3500) {
+		if (st < 3500) {
 			$sb3.css({
-				translate: [0, 0 - (st - (winH + 3500))]
+				opacity: 0
+			});
+		}
+		
+		if (st > 4000) {
+			$sb3.css({
+				translate: [0, 0 - (st - 4000)]
 			});
 			
 		}

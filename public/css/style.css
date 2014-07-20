@@ -154,7 +154,8 @@ body {
 
 .design-block {
   background: white;
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding-bottom: 0; }
   .design-block p {
     font-weight: 300;
     font-size: 30px;
@@ -163,7 +164,10 @@ body {
     font-size: 18px;
     line-height: 180%; }
   .design-block img {
-    width: auto; }
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
+  .design-block .project-linkout {
+    display: none; }
 
 .quote-block {
   padding: 80px 0 50px;
@@ -228,7 +232,8 @@ body {
   line-height: 42px;
   margin-top: 0; }
 .services .intro-section {
-  position: relative; }
+  position: relative;
+  z-index: 30009; }
   .services .intro-section p {
     font-size: 18px;
     color: #053039; }
@@ -239,10 +244,9 @@ body {
     color: #10a7c7;
     font-weight: 600;
     position: fixed;
-    bottom: 450px;
+    bottom: 420px;
     z-index: 100;
-    width: 500px;
-    top: 120px; }
+    width: 500px; }
   .services .intro-section #learn-more {
     text-transform: uppercase;
     position: fixed;
@@ -253,8 +257,6 @@ body {
   z-index: 4;
   margin-bottom: 0;
   opacity: 0; }
-.services #services-block-2 {
-  margin-bottom: 100px; }
 .services #services-block-3 {
   position: fixed;
   z-index: 150;
@@ -292,7 +294,7 @@ body {
   font-size: large; }
 
 .project-list {
-  margin-top: 3900px;
+  margin-top: 3600px;
   margin-bottom: 50px; }
   .project-list .img-block {
     padding: 0;
