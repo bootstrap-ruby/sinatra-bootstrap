@@ -21,7 +21,7 @@
       .navbar .nav li a:hover {
         color: #10a7c7; }
       .services .navbar .nav li a {
-        color: #f02f16; }
+        color: #81b7c1; }
   .navbar .navbar-brand {
     background: url("../images/hc-logo.png") no-repeat;
     text-indent: -9999px;
@@ -154,7 +154,8 @@ body {
 
 .design-block {
   background: white;
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding-bottom: 0; }
   .design-block p {
     font-weight: 300;
     font-size: 30px;
@@ -163,11 +164,15 @@ body {
     font-size: 18px;
     line-height: 180%; }
   .design-block img {
-    width: auto; }
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
+  .design-block .project-linkout {
+    display: none; }
 
 .quote-block {
   padding: 80px 0 50px;
-  min-height: 0; }
+  min-height: 0;
+  background: #fafafa; }
   .quote-block p {
     font-size: 30px; }
   .quote-block #call-to-action {
@@ -211,46 +216,64 @@ body {
       font-size: 16px;
       display: none; }
 
-.services {
-  background: white url(../images/services.jpg) no-repeat top right; }
-  .services p {
-    font-size: 18px;
-    line-height: 30px;
-    font-family: "Tisa OT", Georgia, serif;
-    font-weight: 300;
-    color: #333333; }
-  .services strong {
-    font-weight: 400; }
-  .services .main-content {
-    background: transparent; }
-    .services .main-content h3 {
-      text-transform: uppercase;
-      font-weight: 200;
-      font-size: 32px;
-      color: #10a7c7;
-      line-height: 42px;
-      margin-top: 0; }
-  .services .navbar {
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px; }
-  .services .page-title {
-    font-size: 60px;
-    font-family: "Tisa OT", Georgia, serif;
-    font-style: italic;
-    color: #f02f16;
-    margin-top: 200px;
-    font-weight: bold;
-    text-shadow: 0px 1px #fff;
-    margin-bottom: 50px; }
+.services p {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Tisa OT", Georgia, serif;
+  font-weight: 300;
+  color: #053039; }
+.services strong {
+  font-weight: 400; }
+.services .main-content h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 32px;
+  color: #10a7c7;
+  line-height: 42px;
+  margin-top: 0; }
+.services .intro-section {
+  position: relative;
+  z-index: 30009; }
   .services .intro-section p {
-    font-size: 24px;
-    line-height: 36px; }
-  .services .section {
-    margin-bottom: 100px; }
-    .services .section img {
-      width: auto; }
+    font-size: 18px;
+    color: #053039; }
+  .services .intro-section .page-title {
+    font-size: 48px;
+    line-height: 120%;
+    font-family: "Brandon Grotesque", Helvetica, sans-serif;
+    color: #10a7c7;
+    font-weight: 600;
+    position: fixed;
+    bottom: 420px;
+    z-index: 100;
+    width: 500px; }
+  .services .intro-section #learn-more {
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 50px; }
+.services .services-block {
+  position: fixed;
+  bottom: 10px;
+  z-index: 4;
+  margin-bottom: 0;
+  opacity: 0; }
+.services #services-block-3 {
+  position: fixed;
+  z-index: 150;
+  bottom: 25%;
+  left: 10%;
+  width: 700px;
+  opacity: 0; }
+  .services #services-block-3 p {
+    font-size: 42px;
+    line-height: 120%;
+    font-style: italic;
+    color: #333333; }
+  .services #services-block-3 #rule {
+    width: 0px;
+    height: 1px;
+    margin: 30px auto 0;
+    background-color: #81b7c1; }
 
 .bts {
   background: whitesmoke url("../images/bts.jpg") no-repeat left top;
@@ -271,7 +294,7 @@ body {
   font-size: large; }
 
 .project-list {
-  margin-top: 100px;
+  margin-top: 3600px;
   margin-bottom: 50px; }
   .project-list .img-block {
     padding: 0;
@@ -307,3 +330,64 @@ body {
     font-family: "Tisa OT", Georgia, serif;
     font-weight: normal;
     color: #666; }
+
+.better-world-block {
+  font-family: "Tisa OT", Georgia, serif; }
+  .better-world-block h3 {
+    font-size: 60px;
+    font-family: "Tisa OT", Georgia, serif;
+    /*font-style: italic;*/
+    margin-bottom: 10px; }
+  .better-world-block .lead {
+    font-style: italic; }
+  .better-world-block h4 {
+    font-size: 32px;
+    color: #f02f16; }
+  .better-world-block p {
+    font-size: 18px;
+    line-height: 160%; }
+  .better-world-block .block {
+    margin-bottom: 50px; }
+
+#units {
+  position: fixed;
+  z-index: 100;
+  bottom: 0; }
+
+#browser {
+  width: 1041px;
+  height: 678px;
+  background: url("../images/browser.png") no-repeat;
+  position: fixed;
+  z-index: 10;
+  bottom: -140px;
+  right: -400px;
+  -webkit-transform-origin: top right; }
+
+#ipad {
+  width: 351px;
+  height: 466px;
+  background: url("../images/ipad.png") no-repeat left top;
+  position: fixed;
+  z-index: 13;
+  bottom: -1px; }
+
+#iphone {
+  width: 214px;
+  height: 393px;
+  background: url("../images/iphone.png") no-repeat left top;
+  position: fixed;
+  z-index: 15;
+  bottom: -1px;
+  right: -40px; }
+
+#social {
+  width: 418px;
+  height: 231px;
+  background: url("../images/social.png") no-repeat left top;
+  position: fixed;
+  z-index: 20;
+  bottom: 50px;
+  right: 0;
+  opacity: 0;
+  -webkit-transform: scale(0.5); }
