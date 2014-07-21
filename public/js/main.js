@@ -43,7 +43,9 @@ $(document).ready(function() {
 	
 	$('.main-title').fitText();
 	
-	$(window).load(function() {
-		
-	});
+	
+});
+
+$(window).load(function() {
+	$('body').addClass('loaded');
 });
