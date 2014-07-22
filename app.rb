@@ -14,7 +14,7 @@ end
 
 get '/contact' do
 
-	erb :contact
+	erb :svg
 end
 
 get '/design-services' do

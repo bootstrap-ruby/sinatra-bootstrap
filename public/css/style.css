@@ -10,60 +10,88 @@
   left: 0;
   border: none;
   color: white;
-  padding: 0 5%;
-  display: none; }
+  padding: 0px 5%;
+  background: #ee4853;
+  border-radius: 0; }
   .navbar .nav li {
     text-transform: uppercase;
-    font-size: 16px;
-    font-style: italic; }
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Bree", sans-serif; }
     .navbar .nav li a {
-      color: white;
-      padding-top: 12px; }
+      color: #e8ea1c;
+      padding-top: 15px; }
       .navbar .nav li a:hover {
         color: #10a7c7; }
-      .services .navbar .nav li a {
-        color: #81b7c1; }
-  .navbar .navbar-brand {
-    background: url("../images/hc-logo.png") no-repeat;
-    text-indent: -9999px;
-    width: 43px;
-    height: 43px; }
+  .navbar #hc-logo {
+    margin-top: -50px;
+    width: 100px; }
+    .navbar #hc-logo path, .navbar #hc-logo polygon {
+      fill: #e8ea1c; }
+
+h1, h2, h3, h4 {
+  font-family: "Bree", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 body {
   font-family: "Brandon Grotesque", Helvetica, sans-serif;
-  background: #1b3f4b; }
+  background-color: #1b3f4b;
+  color: #e8ea1c; }
+
+.btn-primary {
+  background: #ee4853;
+  font-family: "Bree", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  color: #e8ea1c;
+  padding: 15px 35px;
+  border-radius: 0; }
 
 .cover {
   color: #e8ea1c;
   width: 90%;
   max-width: 1280px;
   margin: 50px auto 50px; }
-  .cover .intro {
-    text-align: center;
-    font-family: "FreightText", Georgia, serif;
-    font-style: italic;
+
+.intro {
+  font-family: "FreightText", Georgia, serif;
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: 80px;
+  margin-top: 50px; }
+  .intro p {
+    -webkit-transform: translateY(30px);
+    opacity: 0;
+    -webkit-transition-duration: 1400ms;
+    font-size: 24px; }
+  .intro p:nth-child(1) {
+    -webkit-transition-delay: 1s; }
+    .loaded .intro p:nth-child(1) {
+      opacity: 1;
+      -webkit-transform: translateY(0); }
+  .intro p:nth-child(2) {
+    -webkit-transition-delay: 2.5s; }
+    .loaded .intro p:nth-child(2) {
+      opacity: 1;
+      -webkit-transform: translateY(0); }
+  .intro p:nth-child(3) {
+    -webkit-transition-delay: 4s; }
+    .loaded .intro p:nth-child(3) {
+      opacity: 1;
+      -webkit-transform: translateY(0); }
+  .intro .main-title {
+    margin-top: 50px;
+    font-family: "Bree", sans-serif;
     font-size: 30px;
-    font-weight: 100;
-    margin-bottom: 80px; }
-    .cover .intro p {
-      -webkit-transform: translateY(30px);
-      opacity: 0;
-      -webkit-transition-duration: 1400ms; }
-    .cover .intro p:nth-child(1) {
-      -webkit-transition-delay: 1s; }
-      .loaded .cover .intro p:nth-child(1) {
-        opacity: 1;
-        -webkit-transform: translateY(0); }
-    .cover .intro p:nth-child(2) {
-      -webkit-transition-delay: 2.5s; }
-      .loaded .cover .intro p:nth-child(2) {
-        opacity: 1;
-        -webkit-transform: translateY(0); }
-    .cover .intro p:nth-child(3) {
-      -webkit-transition-delay: 4s; }
-      .loaded .cover .intro p:nth-child(3) {
-        opacity: 1;
-        -webkit-transform: translateY(0); }
+    font-style: normal; }
+  .intro h1 {
+    font-size: 80px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 .hero {
   overflow: hidden;
@@ -78,32 +106,15 @@ body {
 
 #left-block {
   position: absolute;
-  left: 26%;
-  width: 48%;
-  -webkit-transition-duration: 1200ms;
-  -webkit-transition-delay: 6s;
-  z-index: 20; }
-  .loaded #left-block {
-    left: 0; }
+  left: 0%;
+  width: 48%; }
+  #left-block img {
+    max-width: 100%; }
 
 #right-block {
   position: absolute;
   left: 52%;
-  opacity: 0;
-  -webkit-transition-delay: 6s;
-  -webkit-transform: translateX(-50px);
-  -webkit-transition-duration: 1200ms; }
-  .loaded #right-block {
-    opacity: 1;
-    -webkit-transform: translateX(0); }
-
-#main-title {
-  background: url("../images/hc-logotype.png") no-repeat left top;
-  background-size: contain;
-  width: 100%;
-  height: 320px;
-  text-indent: -9999px;
-  margin-bottom: 20px; }
+  width: 48%; }
 
 .home-nav {
   background: url("../images/nav-bg.png") no-repeat;
@@ -123,7 +134,6 @@ body {
       color: #e8ea1c; }
 
 .main-content {
-  background: white;
   overflow: auto;
   width: 100%;
   padding-top: 30px; }
@@ -274,3 +284,165 @@ body {
     .more-block ul li p {
       font-size: 16px;
       display: none; }
+
+@-webkit-keyframes Dash {
+  0% {
+    stroke-dashoffset: 500; }
+
+  99% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes longdash {
+  0% {
+    stroke-dashoffset: 3500; }
+
+  99% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes mainframe {
+  0% {
+    stroke-dashoffset: 6500; }
+
+  99% {
+    stroke-dashoffset: 0; } }
+
+#cup {
+  height: 420px; }
+
+.short-path {
+  stroke: #3e727d;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+  fill-opacity: 0;
+  stroke-opacity: 0; }
+  .animate .short-path {
+    stroke-opacity: 1;
+    -webkit-animation: Dash 10s linear; }
+
+.long-path {
+  stroke: #3e727d;
+  stroke-dasharray: 3500;
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+  fill-opacity: 0;
+  stroke-opacity: 0; }
+  .animate .long-path {
+    stroke-opacity: 1;
+    -webkit-animation: longdash 4s linear; }
+
+.main-frame {
+  stroke: #3e727d;
+  stroke-dasharray: 6500;
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+  fill-opacity: 0;
+  stroke-opacity: 0; }
+  .animate .main-frame {
+    -webkit-animation: longdash 4s linear;
+    stroke-opacity: 1; }
+
+.line-path {
+  shape-rendering: crispEdges; }
+
+.bg-fill {
+  fill-opacity: 1; }
+
+.services-wrap {
+  color: #e8ea1c; }
+  .services-wrap .services-block {
+    margin-bottom: 50px; }
+  .services-wrap h3 {
+    color: #ee4853;
+    font-weight: bold;
+    font-family: "Bree", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px; }
+    .services-wrap h3 .amp {
+      font-family: Baskerville;
+      font-style: italic;
+      font-weight: normal; }
+  .services-wrap .lead {
+    font-size: 24px; }
+  .services-wrap h4 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Bree", sans-serif;
+    text-transform: uppercase; }
+  .services-wrap p {
+    font-size: 18px; }
+    .services-wrap p strong {
+      font-weight: normal; }
+
+.page-title {
+  font-size: 80px;
+  text-align: center;
+  font-family: "Bree", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 100px auto; }
+
+.request-quote-block {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .request-quote-block h3 {
+    font-size: 42px; }
+  .request-quote-block .request-block {
+    padding: 25px; }
+  .request-quote-block .selected {
+    background: #1e4552;
+    border: 1px solid #224f5e; }
+
+.intro-container .titles {
+  margin-top: 30px; }
+  .intro-container .titles h2 {
+    font-size: 48px; }
+
+#intro-screenshots {
+  position: relative;
+  margin-top: 180px;
+  z-index: 0;
+  height: 450px; }
+  #intro-screenshots .screenshot {
+    position: absolute;
+    -webkit-transform: translateY(0);
+    height: 444px; }
+
+#scr-ggw {
+  z-index: 1;
+  top: 35px; }
+
+#scr-aether {
+  z-index: 5; }
+
+#scr-nitido {
+  top: 35px;
+  right: 0;
+  z-index: 1; }
+
+.screenshot {
+  max-width: 100%; }
+
+.white-container {
+  position: relative;
+  z-index: 30;
+  background: white;
+  padding: 50px 2.5%;
+  color: #222233;
+  -webkit-box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.3); }
+  .white-container .section {
+    padding: 50px 0; }
+
+.screenshot-wrap {
+  width: 100%; }
+  .screenshot-wrap .long-path, .screenshot-wrap .short-path {
+    stroke: #9999bb; }
+  .screenshot-wrap svg {
+    width: 100%;
+    position: absolute; }
+  .screenshot-wrap .browser-frame {
+    width: 800px; }
+  .screenshot-wrap img {
+    width: 99%;
+    margin-left: 1px;
+    margin-top: 50px; }
