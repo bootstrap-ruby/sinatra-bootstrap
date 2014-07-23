@@ -39,6 +39,8 @@ $(document).ready(function() {
 	
 	var $aet = $('#scr-aether');
 	var $cg = $('#scr-cg');
+	var $arev = $('#scr-arev');
+	var $palm = $('#scr-palmarinha');
 	
 	$aet.css({
 		left: ($aet.parent().width() - 813) / 2
@@ -55,9 +57,17 @@ $(document).ready(function() {
 		});
 		$('#intro-screenshots').height($aet.height());
 		
-		$('.main-frame').attr('height', $cg.height() + 50).attr('width', $cg.width());
-		$('#browser-line').attr('x2', $cg.width());
-		$('#address-bar').attr('width', $cg.width() - 90);
+		$('#cg-frame .main-frame').attr('height', $cg.height() + 50).attr('width', $cg.width());
+		$('#cg-frame .browser-line').attr('x2', $cg.width());
+		$('#cg-frame .address-bar').attr('width', $cg.width() - 90);
+		
+		$('#arev-frame .main-frame').attr('height', $arev.height() + 50).attr('width', $arev.width());
+		$('#arev-frame .browser-line').attr('x2', $arev.width());
+		$('#arev-frame .address-bar').attr('width', $arev.width() - 90);
+		
+		$('#palm-frame .main-frame').attr('height', $palm.height() + 50).attr('width', $palm.width());
+		$('#palm-frame .browser-line').attr('x2', $palm.width());
+		$('#palm-frame .address-bar').attr('width', $palm.width() - 90);
 	});
 	
 });

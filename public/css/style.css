@@ -107,9 +107,8 @@ body {
 #left-block {
   position: absolute;
   left: 0%;
-  width: 48%; }
-  #left-block img {
-    max-width: 100%; }
+  width: 48%;
+  height: 600px; }
 
 #right-block {
   position: absolute;
@@ -306,9 +305,6 @@ body {
   99% {
     stroke-dashoffset: 0; } }
 
-#cup {
-  height: 420px; }
-
 .short-path {
   stroke: #3e727d;
   stroke-dasharray: 500;
@@ -330,6 +326,16 @@ body {
   .animate .long-path {
     stroke-opacity: 1;
     -webkit-animation: longdash 4s linear; }
+
+#cup circle, #cup polyline, #cup line {
+  stroke: #ee4853;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+  fill-opacity: 0;
+  stroke-opacity: 0;
+  stroke-opacity: 1;
+  -webkit-animation: Dash 5s linear; }
 
 .main-frame {
   stroke: #3e727d;
@@ -423,20 +429,29 @@ body {
 .screenshot {
   max-width: 100%; }
 
-.white-container {
+.full-container {
   position: relative;
   z-index: 30;
-  background: white;
-  padding: 50px 2.5%;
-  color: #222233;
-  -webkit-box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.3); }
-  .white-container .section {
+  color: #332222;
+  border-bottom: 1px solid #ddd; }
+  .full-container .section {
     padding: 50px 0; }
 
+#proj-chand {
+  background: white;
+  padding: 50px 2.5%;
+  -webkit-box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.3); }
+  #proj-chand h5 {
+    font-size: 30px;
+    font-weight: 100; }
+  #proj-chand .screenshot-wrap {
+    width: 100%;
+    max-width: 1400px; }
+
 .screenshot-wrap {
-  width: 100%; }
+  margin: 0 auto; }
   .screenshot-wrap .long-path, .screenshot-wrap .short-path {
-    stroke: #9999bb; }
+    stroke: #b3b3b3; }
   .screenshot-wrap svg {
     width: 100%;
     position: absolute; }
@@ -446,3 +461,67 @@ body {
     width: 99%;
     margin-left: 1px;
     margin-top: 50px; }
+
+.project-info {
+  margin-top: 20px; }
+  .project-info .project-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ee4853;
+    margin-bottom: 5px; }
+  .project-info .project-desc {
+    font-size: 16px;
+    font-family: "FreightText", Georgia, serif;
+    font-style: italic; }
+
+#proj-goaprop {
+  padding: 50px 0;
+  background-color: #fbfbf2; }
+  #proj-goaprop .lead {
+    margin-top: 20px; }
+  #proj-goaprop img {
+    max-width: 100%; }
+
+#proj-arev {
+  background: white;
+  padding: 50px 0; }
+  #proj-arev .screenshot-wrap {
+    position: relative; }
+
+#arev-frame {
+  height: 500px; }
+
+#scr-arev {
+  max-width: 1187px; }
+
+#arev-frame-iphone {
+  position: absolute;
+  right: 95px;
+  bottom: -40px;
+  width: 260px;
+  height: 519px; }
+
+#scr-arev-iphone {
+  width: 226px;
+  position: absolute;
+  right: 113px;
+  bottom: 26px;
+  border-radius: 4px; }
+
+#arev-frame-iphone rect {
+  fill-opacity: 1 !important; }
+
+#proj-palma {
+  padding-top: 30px; }
+  #proj-palma h5 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 20px; }
+    #proj-palma h5 span {
+      color: #ee4853; }
+  #proj-palma .screenshot-wrap {
+    margin-top: 20px; }
+  #proj-palma .project-info {
+    margin-top: 60px; }
