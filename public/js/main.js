@@ -31,7 +31,7 @@ $(document).ready(function() {
 //		fx: 'scrollUp'
 //	});
 	
-	$('.invoices-block').waypoint(function() {
+	$('#proj-invoices').waypoint(function() {
 		$(this).addClass('visible');
 	}, { offset: '75%' });
 	
@@ -41,6 +41,7 @@ $(document).ready(function() {
 	var $cg = $('#scr-cg');
 	var $arev = $('#scr-arev');
 	var $palm = $('#scr-palmarinha');
+	var $gpc = $('#scr-gpc');
 	
 	$aet.css({
 		left: ($aet.parent().width() - 813) / 2
@@ -57,17 +58,21 @@ $(document).ready(function() {
 		});
 		$('#intro-screenshots').height($aet.height());
 		
-		$('#cg-frame .main-frame').attr('height', $cg.height() + 50).attr('width', $cg.width());
+		$('#cg-frame .main-frame').attr('height', $cg.height() + 50).attr('width', $cg.width() + 1);
 		$('#cg-frame .browser-line').attr('x2', $cg.width());
 		$('#cg-frame .address-bar').attr('width', $cg.width() - 90);
 		
-		$('#arev-frame .main-frame').attr('height', $arev.height() + 50).attr('width', $arev.width());
+		$('#arev-frame .main-frame').attr('height', $arev.height() + 50).attr('width', $arev.width() + 1);
 		$('#arev-frame .browser-line').attr('x2', $arev.width());
 		$('#arev-frame .address-bar').attr('width', $arev.width() - 90);
 		
 		$('#palm-frame .main-frame').attr('height', $palm.height() + 50).attr('width', $palm.width());
 		$('#palm-frame .browser-line').attr('x2', $palm.width());
 		$('#palm-frame .address-bar').attr('width', $palm.width() - 90);
+		
+		$('#gpc-frame .main-frame').attr('height', $gpc.height() + 50).attr('width', $gpc.width() + 1);
+		$('#gpc-frame .browser-line').attr('x2', $gpc.width());
+		$('#gpc-frame .address-bar').attr('width', $gpc.width() - 90);
 	});
 	
 });

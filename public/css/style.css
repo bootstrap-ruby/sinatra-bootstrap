@@ -163,34 +163,6 @@ body {
     .story-block .linkout a {
       color: inherit; }
 
-.invoices-block {
-  padding: 50px 5%;
-  margin-bottom: 0;
-  background: #d75544;
-  color: white; }
-  .invoices-block p {
-    font-weight: 400; }
-  .invoices-block img {
-    width: auto;
-    position: absolute;
-    margin-left: -50px;
-    -webkit-transition-duration: 1400ms; }
-  .invoices-block .project-title {
-    color: white; }
-  .invoices-block .meta-block {
-    position: absolute;
-    top: 350px;
-    right: 90px; }
-  .js .invoices-block img {
-    -webkit-transform: translateY(20px);
-    -webkit-filter: blur(10px);
-    opacity: 0; }
-
-.js .invoices-block.visible img {
-  -webkit-transform: translateX(0);
-  -webkit-filter: blur(0);
-  opacity: 1; }
-
 .responsive-block {
   background: #f0f3f4; }
   .responsive-block .block-copy p {
@@ -351,6 +323,19 @@ body {
 .line-path {
   shape-rendering: crispEdges; }
 
+.address-path {
+  font-family: "Brandon Grotesque", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 10px;
+  text-transform: uppercase;
+  stroke-opacity: 0 !important;
+  fill-opacity: 1 !important;
+  -webkit-transition-delay: 4s;
+  -webkit-transition-duration: 800ms;
+  opacity: 0; }
+  .animate .address-path {
+    opacity: 1; }
+
 .bg-fill {
   fill-opacity: 1; }
 
@@ -431,14 +416,23 @@ body {
 
 .full-container {
   position: relative;
+  background: white;
   z-index: 30;
   color: #332222;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  padding-top: 50px;
+  padding-bottom: 50px; }
   .full-container .section {
     padding: 50px 0; }
+  .full-container h5 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 20px; }
+    .full-container h5 span {
+      color: #ee4853; }
 
 #proj-chand {
-  background: white;
   padding: 50px 2.5%;
   -webkit-box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.3); }
   #proj-chand h5 {
@@ -457,10 +451,18 @@ body {
     position: absolute; }
   .screenshot-wrap .browser-frame {
     width: 800px; }
-  .screenshot-wrap img {
+  .screenshot-wrap .screenshot {
     width: 99%;
     margin-left: 1px;
-    margin-top: 50px; }
+    margin-top: 51px;
+    opacity: 0;
+    -webkit-transition-duration: 800ms;
+    z-index: 100; }
+    .animate .screenshot-wrap .screenshot {
+      opacity: 1; }
+
+.screenshot-wrap.animate .screenshot {
+  opacity: 1; }
 
 .project-info {
   margin-top: 20px; }
@@ -482,12 +484,24 @@ body {
     margin-top: 20px; }
   #proj-goaprop img {
     max-width: 100%; }
+  #proj-goaprop h4 {
+    font-family: "Brandon Grotesque", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    font-weight: bold; }
+    #proj-goaprop h4 span {
+      color: #ee4853; }
 
 #proj-arev {
   background: white;
   padding: 50px 0; }
   #proj-arev .screenshot-wrap {
     position: relative; }
+  #proj-arev .lead {
+    margin-bottom: 40px;
+    margin-top: 20px; }
+  #proj-arev .long-path, #proj-arev .short-path, #proj-arev text {
+    stroke: #86eed8; }
 
 #arev-frame {
   height: 500px; }
@@ -497,7 +511,7 @@ body {
 
 #arev-frame-iphone {
   position: absolute;
-  right: 95px;
+  right: -20px;
   bottom: -40px;
   width: 260px;
   height: 519px; }
@@ -505,7 +519,7 @@ body {
 #scr-arev-iphone {
   width: 226px;
   position: absolute;
-  right: 113px;
+  right: -2px;
   bottom: 26px;
   border-radius: 4px; }
 
@@ -513,15 +527,28 @@ body {
   fill-opacity: 1 !important; }
 
 #proj-palma {
-  padding-top: 30px; }
-  #proj-palma h5 {
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 100;
-    margin-bottom: 20px; }
-    #proj-palma h5 span {
-      color: #ee4853; }
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background: #fafafa; }
   #proj-palma .screenshot-wrap {
     margin-top: 20px; }
   #proj-palma .project-info {
     margin-top: 42px; }
+
+#proj-invoices img {
+  width: auto;
+  position: absolute;
+  margin-left: -50px;
+  top: -70px;
+  -webkit-transition-duration: 1400ms; }
+.js #proj-invoices img {
+  -webkit-transform: translateY(20px);
+  -webkit-filter: blur(10px);
+  opacity: 0; }
+#proj-invoices .project-info {
+  margin-top: 300px; }
+
+.js #proj-invoices.visible img {
+  -webkit-transform: translateX(0);
+  -webkit-filter: blur(0);
+  opacity: 1; }
