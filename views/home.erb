@@ -89,15 +89,15 @@
 		</div>
 
 		<div id="intro-screenshots">
-			<div id="scr-ggw" class="screenshot"  data-210-top-top="transform:translateY(0px)" data-top-bottom="transform:translateY(190px)">
+			<div id="scr-ggw" class="screenshot"  data-220-top-top="transform:translateY(0px)" data-top-bottom="transform:translateY(250px)">
 				<img src="/images/scr-ggw.jpg" alt="" />
 			</div>
 			
-			<div id="scr-aether" class="screenshot"  data-250-top-top="transform:translateY(0px)" data-top-bottom="transform:translateY(110px)">
+			<div id="scr-aether" class="screenshot"  data-220-top-top="transform:translateY(0px)" data-top-bottom="transform:translateY(90px)">
 				<img src="/images/scr-aether.jpg" alt=""  />
 			</div>
 			
-			<div id="scr-nitido" class="screenshot"  data-200-top-top="transform:translateY(0px)" data-top-bottom="transform:translateY(150px)">
+			<div id="scr-nitido" class="screenshot"  data-220-top-top="transform:translateY(0px)" data-top-bottom="transform:translateY(180px)">
 				<img src="/images/scr-ggw.jpg" alt="" />
 			</div>
 		</div>
@@ -113,7 +113,7 @@
 		</div>
 	</div>
 	<div class="screenshot-wrap">
-		<svg version="1.1">
+		<svg version="1.1" height="530">
 			<g id="cg-frame" class="browser-frame" sketch:type="MSShapeGroup" transform="translate(0.5,0.5)">
 			    <rect class="long-path main-frame" x="0" y="0" width="95%" rx="5"></rect>
 			    <line class="browser-line long-path" y2="50" x2="95%" y1="50" x1="0" stroke-width="5" stroke="#000000" fill="none" />
@@ -147,7 +147,7 @@
 		</div>
 		<div class="row">
 			<div class="screenshot-wrap">
-				<svg version="1.1">
+				<svg version="1.1" height="680">
 					<g id="gpc-frame" class="browser-frame" sketch:type="MSShapeGroup" transform="translate(0.5,0.5)">
 					    <rect class="long-path main-frame" x="0" y="0" width="95%" rx="5"></rect>
 					    <line class="browser-line long-path" y2="50" x2="95%" y1="50" x1="0" stroke-width="5" stroke="#000000" fill="none" />
@@ -174,8 +174,8 @@
 			<div class="clearfix"></div>
 			
 			<div class="col-md-12 screenshot-wrap">
-				<svg version="1.1">
-					<g id="arev-frame" class="browser-frame" sketch:type="MSShapeGroup" transform="translate(0.5,0.5)">
+				<svg version="1.1"  id="arev-frame">
+					<g class="browser-frame" sketch:type="MSShapeGroup" transform="translate(0.5,0.5)">
 					   <rect class="long-path main-frame" x="0" y="0" width="95%" rx="5"></rect>
 					   <line class="browser-line long-path" y2="50" x2="95%" y1="50" x1="0" stroke-width="5" stroke="#000000" fill="none" />
 					   <circle class="short-path" cx="22" cy="23" r="6"></circle>
@@ -185,16 +185,19 @@
 					   <text x="86" y="26" class="address-path short-path">a Reverie</text>
 					</g>
 				</svg>
-				<svg version="1.1" id="arev-frame-iphone" transform="translate(0.5,0.5)">
-					<g sketch:type="MSLayerGroup" stroke="#4990E2">
-					    <rect class="long-path" id="iphone-frame" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="258" height="518" rx="15"></rect>
-					    <!--<rect class="long-path" id="Rectangle-4" fill="#FFFFFF" sketch:type="MSShapeGroup" x="15" y="52" width="228" height="403" rx="3"></rect>-->
-					    <circle class="long-path" id="Oval-4" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="128" cy="484" r="20.5"></circle>
-					    <rect class="long-path" id="Rectangle-5" fill="#FFFFFF" sketch:type="MSShapeGroup" x="106" y="26" width="51" height="10" rx="3"></rect>
-					    <path class="long-path" fill="#FFFFFF" d="M96,36 C98.7614237,36 101,33.7614237 101,31 C101,28.2385763 98.7614237,26 96,26 C93.2385763,26 91,28.2385763 91,31 C91,33.7614237 93.2385763,36 96,36 Z" id="Oval-5" sketch:type="MSShapeGroup"></path>
-					    <img src="/images/scr-arev-iphone.jpg" alt="" id="scr-arev-iphone" class="screenshot" />
-					</g>
-				</svg>
+				<div id="arev-iphone-frame-wrap"  data-bottom-top="transform:translateY(30px)" data-top-bottom="transform:translateY(-30px)">
+					<svg version="1.1" id="arev-frame-iphone">
+						<g sketch:type="MSLayerGroup" stroke="#4990E2">
+						    <rect class="long-path" id="iphone-frame" fill="#FFFFFF" sketch:type="MSShapeGroup" x="0" y="0" width="258" height="518" rx="15"></rect>
+						    <!--<rect class="long-path" id="Rectangle-4" fill="#FFFFFF" sketch:type="MSShapeGroup" x="15" y="52" width="228" height="403" rx="3"></rect>-->
+						    <circle class="long-path" id="Oval-4" fill="#FFFFFF" sketch:type="MSShapeGroup" cx="128" cy="484" r="20.5"></circle>
+						    <rect class="long-path" id="Rectangle-5" fill="#FFFFFF" sketch:type="MSShapeGroup" x="106" y="26" width="51" height="10" rx="3"></rect>
+						    <path class="long-path" fill="#FFFFFF" d="M96,36 C98.7614237,36 101,33.7614237 101,31 C101,28.2385763 98.7614237,26 96,26 C93.2385763,26 91,28.2385763 91,31 C91,33.7614237 93.2385763,36 96,36 Z" id="Oval-5" sketch:type="MSShapeGroup"></path>
+						    
+						</g>
+					</svg>
+					<img src="/images/scr-arev-iphone.jpg" alt="" class="screenshot" id="scr-arev-iphone" />
+				</div>
 				<img src="/images/scr-arev.jpg" class="screenshot" alt="" id="scr-arev" />
 			</div>
 			<div class="col-md-8">
@@ -219,7 +222,7 @@
 				<p class="project-desc">Lush visuals in a spacious layout. Built with Bootstrap on Sinatra Ruby.</p>
 			</div>
 			<div class="col-md-12 screenshot-wrap">
-				<svg version="1.1">
+				<svg version="1.1" height="650">
 					<g id="palm-frame" class="browser-frame" sketch:type="MSShapeGroup" transform="translate(0.5,0.5)">
 					   <rect class="long-path main-frame" x="0" y="0" width="95%" rx="5"></rect>
 					   <line class="browser-line long-path" y2="50" x2="95%" y1="50" x1="0" stroke-width="5" stroke="#000000" fill="none" />

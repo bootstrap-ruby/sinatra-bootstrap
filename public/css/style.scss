@@ -687,8 +687,16 @@ body {
 	
 }
 
+#arev-iphone-frame-wrap {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+	
+}
+
 #arev-frame {
-	height: 500px;
+	height: 700px;
 }
 
 #scr-arev {
@@ -696,7 +704,7 @@ body {
 }
 
 #arev-frame-iphone {
-	position: absolute;
+
 	right: -20px;
 	bottom: -40px;
 	width: 260px;

@@ -503,14 +503,19 @@ body {
   #proj-arev .long-path, #proj-arev .short-path, #proj-arev text {
     stroke: #86eed8; }
 
+#arev-iphone-frame-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100; }
+
 #arev-frame {
-  height: 500px; }
+  height: 700px; }
 
 #scr-arev {
   max-width: 1187px; }
 
 #arev-frame-iphone {
-  position: absolute;
   right: -20px;
   bottom: -40px;
   width: 260px;

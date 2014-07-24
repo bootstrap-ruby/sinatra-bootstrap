@@ -35,7 +35,7 @@ $(document).ready(function() {
 		$(this).addClass('visible');
 	}, { offset: '75%' });
 	
-	skrollr.init();
+	
 	
 	var $aet = $('#scr-aether');
 	var $cg = $('#scr-cg');
@@ -73,6 +73,8 @@ $(document).ready(function() {
 		$('#gpc-frame .main-frame').attr('height', $gpc.height() + 50).attr('width', $gpc.width() + 1);
 		$('#gpc-frame .browser-line').attr('x2', $gpc.width());
 		$('#gpc-frame .address-bar').attr('width', $gpc.width() - 90);
+		
+		skrollr.init();
 	});
 	
 });
