@@ -536,6 +536,7 @@ body {
 	.screenshot {
 		position: absolute;
 		-webkit-transform: translateY(0);
+		-webkit-transform-origin-y: bottom;
 		height: 444px;
 	}
 }
@@ -546,7 +547,8 @@ body {
 }
 
 #scr-aether {
-	z-index: 5;
+	z-index: 50;
+	
 }
 
 #scr-nitido {
