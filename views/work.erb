@@ -6,7 +6,7 @@
 	
 	<div class="row section services-block" id="services-block-1">
 		<div class="col-md-6">
-			<svg id="cup">
+			<svg id="browser-frames" height="400">
 			
 				<g id="Group-+-iphone" sketch:type="MSLayerGroup" stroke="#4990E2" transform="translate(0.5,0.5)">
 				    <g id="Group-+-iphone" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)" stroke="#4990E2">
@@ -18,7 +18,7 @@
 				            <circle class="short-path" id="Oval-3" cx="60" cy="23" r="6"></circle>
 				            <rect class="long-path" id="Rectangle-2" x="77" y="13" width="457" height="20" rx="3"></rect>
 				        </g>
-				        <g id="iphone" transform="translate(365.000000, 88.000000)" sketch:type="MSShapeGroup">
+				        <g id="iphone" transform="translate(365.000000, 88.000000)" sketch:type="MSShapeGroup"  data-bottom-top="transform:translateY(100px) translateX(365px)" data-top-bottom="transform:translateY(78px) translateX(365px)">
 				            <rect class="long-path bg-fill" id="Rectangle-3" fill="#1A3F4A" x="0" y="0" width="158" height="288" rx="15"></rect>
 				            <rect class="long-path" id="Rectangle-4" x="9" y="34" width="140" height="218" rx="3"></rect>
 				            <circle class="short-path" id="Oval-4" cx="78.5" cy="269.5" r="12.5"></circle>
@@ -31,7 +31,7 @@
 		</div>
 		<div class="col-md-6">
 			<h3>Web Design <span class="amp">&amp;</span> Development</h3>
-			<p class="lead">Our core function is the production of websites. Proficient in the arts of not just design and information architecture, but writing code for various platforms, including content management systems, ecommerce platforms, visually interactive static portfolio designs, or even convert PSD renders to HTML.</p>
+			<p class="lead">Our simplest definition is the production of websites. Proficient in the arts of not just design and information architecture, but writing code for various platforms, including content management systems, e-commerce platforms, visually interactive static portfolio designs, or even convert PSD renders to browser code.</p>
 		</div>
 		<div class="clearfix"></div>
 		<div class="col-sm-4">
@@ -88,9 +88,34 @@
 			</div>
 		</div>
 		
-		<div class="col-md-12 text-center">
-			<button class="btn btn-large btn-primary">Request Quote</button>
+		<div class="col-md-8 col-md-offset-2 text-center" id="cta">
+			<button class="btn btn-primary" data-toggle="modal" data-target="#request-quote">Request Quote</button>
 		</div>
 	</div>
 </div>
 
+<div class="modal fade bs-example-modal-lg" id="request-quote" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+         <div class="modal-header">
+           <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
+           <div class="form-group">
+	           <label for="name" class="label">Name</label>
+	           <input type="text" name="name" value="" class="form-control" />
+           </div>
+           <div class="form-group">
+           		<label class="label" for="email">Email and/or Phone</label>
+	           <input type="text" name="email" value=""class="form-control" />
+           </div>
+           <button type="button" class="btn btn-primary pull-right">Send Request</button>
+         </div>
+         <div class="modal-body">
+           Test
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+         </div>
+       </div>
+  </div>
+</div>

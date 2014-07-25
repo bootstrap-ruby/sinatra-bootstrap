@@ -42,14 +42,17 @@ $(document).ready(function() {
 	var $arev = $('#scr-arev');
 	var $palm = $('#scr-palmarinha');
 	var $gpc = $('#scr-gpc');
+	var $scr = $('.screenshot-wrap .screenshot');
 	
 	$aet.css({
 		left: ($aet.parent().width() - 813) / 2
 	});
 	
-	$('.screenshot-wrap').waypoint(function() {
+	$('.screenshot-wrap, #browser-frames').waypoint(function() {
 		$(this).addClass('animate');
-	}, { offset: '50%'});
+	}, { offset: '70%'});
+	
+//	$('#request-quote').modal();
 	
 	$(window).load(function() {
 		$('body').addClass('loaded');
@@ -75,6 +78,10 @@ $(document).ready(function() {
 		$('#gpc-frame .address-bar').attr('width', $gpc.width() - 90);
 		
 		skrollr.init();
+		
+		setTimeout(function() {
+			$('#cup').addClass('bounce');
+		}, 2000)
 	});
 	
 });
