@@ -10,7 +10,7 @@ Go!
 
 Download and run sinatra-bootstrap:
 
-    git clone git@github.com:pokle/sinatra-bootstrap.git
+    git clone https://github.com/bootstrap-ruby/sinatra-bootstrap
     
     cd sinatra-bootstrap
     bundle install             # To install sinatra
