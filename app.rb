@@ -12,9 +12,9 @@ get '/' do
   erb :home
 end
 
-get '/contact' do
+get '/team' do
 
-	erb :svg
+	erb :team
 end
 
 get '/design-services' do
