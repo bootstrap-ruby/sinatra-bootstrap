@@ -523,6 +523,8 @@ body {
     .full-container h5 span {
       color: #ee4853;
       font-weight: bold; }
+  .full-container p em {
+    font-family: "FreightText", Georgia, serif; }
 
 #proj-chand {
   padding: 50px 2.5%;
