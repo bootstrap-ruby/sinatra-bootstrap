@@ -19,5 +19,9 @@ end
 
 get '/design-services' do
 
+	erb :services
+end
+
+get '/portfolio' do
 	erb :work
 end

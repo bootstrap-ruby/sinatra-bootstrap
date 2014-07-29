@@ -13,7 +13,7 @@ $(document).ready(function() {
 			marginTop: (winH - $cover.height()) / 2
 		});
 	}
-	
+
 	
 	$('#start').css({ 
 		'marginTop': winH
@@ -52,7 +52,23 @@ $(document).ready(function() {
 		$(this).addClass('animate');
 	}, { offset: '70%'});
 	
-//	$('#request-quote').modal();
+	var v = $("#icons g"), cur = 0;
+	for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
+	function fadeInNextLI() {
+	  v.eq(cur++).addClass('popin');
+	  if(cur != v.length) setTimeout(fadeInNextLI, 200);
+	}
+	
+	setTimeout(function() {
+		fadeInNextLI()
+	}, 8000);
+	
+	setTimeout(function(){
+		$('.navbar').animate({
+			marginTop: '20px',
+			opacity: 1
+		}, 800);
+	}, 11000);
 	
 	$(window).load(function() {
 		$('body').addClass('loaded');
