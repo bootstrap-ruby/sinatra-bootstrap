@@ -635,16 +635,18 @@ body {
     margin-top: 42px; }
 
 #proj-invoices {
-  overflow: hidden; }
+  overflow: hidden;
+  height: 550px; }
   #proj-invoices img {
-    width: 400px;
-    border: 1px solid #ccc;
+    width: 600px;
+    border: 1px solid #ddd;
     position: absolute;
-    top: -35px;
-    left: 250px;
+    top: 25px;
+    left: 494px;
     /*-webkit-transition-duration: 1400ms;*/
     /*perspective: 500px;*/
-    -webkit-transform: perspective(1800px) rotateX(59deg) rotateZ(49deg) rotateY(-2deg) skewY(-7deg) skewX(4deg);
+    -webkit-transform: perspective(1900px) rotateX(45deg) rotateZ(43deg) rotateY(0deg) skewY(-14deg) skewX(-11deg);
+    /*-webkit-box-shadow: 2px 5px 5px #ddd;*/
     /*	.js & {
     		img {
     			-webkit-transform: translateY(20px) skew(10deg);
@@ -654,16 +656,23 @@ body {
     		
     		*/ }
   #proj-invoices .project-info {
-    margin-top: 350px; }
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 10000;
+    width: 300px; }
   #proj-invoices .screenshot-wrap {
-    top: -70px; }
+    top: -260px;
+    left: -250px; }
 
-#ipad-3d .front {
+#ipad-3d path {
   fill-opacity: 1;
-  fill: white; }
+  stroke: #ffffff;
+  /*stroke: $red;*/ }
 #ipad-3d ellipse {
   fill-opacity: 1;
-  fill: white; }
+  fill: #ddd;
+  stroke: #ffffff; }
 
 /*
 #proj-invoices.visible {
