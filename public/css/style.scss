@@ -921,7 +921,7 @@ body {
 }*/
 
 #cta { // Call to Action or Request Quote
-	margin-top: 30px;
+	margin-top: 70px;
 	input {
 		float: left;
 		width: 320px;
@@ -985,7 +985,72 @@ body {
 }
 
 #footer {
-	border-top: 1px solid lighten($dark, 20%);
-	padding-top: 50px;
-	padding-bottom: 50px;
+padding-bottom: 30px;
+padding-top: 40px;
+border-top: 1px solid lighten($dark, 10%);
+	h3 {
+		color: $red;
+		font-size: 30px;
+		margin-top: 30px;
+	}
+	.contact-info {
+		padding-left: 0;
+		li {
+			font-size: 18px;
+			margin-bottom: 5px;
+			list-style: none;
+			margin-right: 15px;
+			float: left;
+		}
+	} 
+	address {
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	hr {
+		border-color: lighten($dark, 10%);
+	}
+	.footer-nav {
+		padding-left: 0;
+		margin-top: 10px;
+		li {
+			list-style: none;
+			font-size: 18px;
+			font-weight: bold;
+			font-family: $sansAlt;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+			float: left;
+			margin-right: 20px;
+			a {
+				color: $yl;
+			}
+		}
+		.contact-link {
+			font-weight: normal;
+			text-transform: none;
+			font-size: 14px;
+		}
+	}
+	#hc-logo {
+		margin-top: 0px;
+	}
+}
+
+#cold-quote {
+	margin-top: 0px;
+	/*font-family: $serif;*/
+	font-style: italic;
+	/*font-size: 18px;*/
+	display: block;
+	color: $yl;
+	
+}
+
+#footer-bar {
+	opacity: 1;
+	margin-top: 0;
+	#hc-logo {
+
+	}
 }

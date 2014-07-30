@@ -687,7 +687,7 @@ body {
 	}
 }*/
 #cta {
-  margin-top: 30px; }
+  margin-top: 70px; }
   #cta input {
     float: left;
     width: 320px;
@@ -737,6 +737,55 @@ body {
     margin-bottom: 20px; }
 
 #footer {
-  border-top: 1px solid #367e96;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 30px;
+  padding-top: 40px;
+  border-top: 1px solid #295e70; }
+  #footer h3 {
+    color: #ee4853;
+    font-size: 30px;
+    margin-top: 30px; }
+  #footer .contact-info {
+    padding-left: 0; }
+    #footer .contact-info li {
+      font-size: 18px;
+      margin-bottom: 5px;
+      list-style: none;
+      margin-right: 15px;
+      float: left; }
+  #footer address {
+    font-size: 18px;
+    margin-top: 20px; }
+  #footer hr {
+    border-color: #295e70; }
+  #footer .footer-nav {
+    padding-left: 0;
+    margin-top: 10px; }
+    #footer .footer-nav li {
+      list-style: none;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "Bree", sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      float: left;
+      margin-right: 20px; }
+      #footer .footer-nav li a {
+        color: #e8ea1c; }
+    #footer .footer-nav .contact-link {
+      font-weight: normal;
+      text-transform: none;
+      font-size: 14px; }
+  #footer #hc-logo {
+    margin-top: 0px; }
+
+#cold-quote {
+  margin-top: 0px;
+  /*font-family: $serif;*/
+  font-style: italic;
+  /*font-size: 18px;*/
+  display: block;
+  color: #e8ea1c; }
+
+#footer-bar {
+  opacity: 1;
+  margin-top: 0; }

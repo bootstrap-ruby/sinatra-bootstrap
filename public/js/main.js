@@ -64,7 +64,7 @@ $(document).ready(function() {
 	}, 8000);
 	
 	setTimeout(function(){
-		$('.navbar').animate({
+		$('#navbar-main').animate({
 			marginTop: '20px',
 			opacity: 1
 		}, 800);
