@@ -32,11 +32,12 @@
 		<div class="col-md-6">
 			<h3>Web Design <span class="amp">&amp;</span> Development</h3>
 			<p class="lead">Our simplest definition is the production of websites. Proficient in the arts of not just design and information architecture, but writing code for various platforms, including content management systems, e-commerce platforms, visually interactive static portfolio designs, or even convert PSD renders to browser code.</p>
+			<p><button class="btn btn-large btn-primary">Request a quote</button></p>
 		</div>
 		<div class="clearfix"></div>
 		<div class="col-sm-4">
 			<h4>Clean Code</h4>
-			<p>Semantic, correctly indented lines of commented code, and secure well-tested libraries make our projects a breeze to manage, not just for us, but for any web that the project might transition to. Our clients stay with us because they want to, not because they have to.</p>
+			<p>Semantic, correctly indented lines of commented code, and secure well-tested libraries make our projects a breeze to manage, not just for us, but for any web developer that the project might transition to. Our clients stay with us because they want to, not because they have to.</p>
 		</div>
 		
 		<div class="col-sm-4">
@@ -63,7 +64,7 @@
 	<div class="row section request-quote-block">
 		<div class="col-md-8 col-md-offset-2 text-center">
 			<h3>"How much does it cost?"</h3>
-			<p class="lead">The variable nature of each project makes it difficult to give a quote without knowing at least a little about the project. Give us a hint and we'll get back to you with a free consultation.</p>
+			<p class="lead">The variable nature of each project makes it impossible to give an estimate without knowing at least a little about the project. Give us a hint and we'll get back to you with a free consultation.</p>
 		</div>
 		
 		<div class="clearfix"></div>
@@ -88,7 +89,8 @@
 			</div>
 		</div>
 		
-		<div class="col-md-8 col-md-offset-2 text-center" id="cta">
+		<div class="col-md-6 col-md-offset-3 text-center" id="cta">
+			<input type="" name="" value="" placeholder="Your Email or Phone" />
 			<button class="btn btn-primary" data-toggle="modal" data-target="#request-quote">Request Quote</button>
 		</div>
 	</div>
@@ -98,23 +100,28 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
          <div class="modal-header">
-           <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>-->
-           <div class="form-group">
-	           <label for="name" class="label">Name</label>
-	           <input type="text" name="name" value="" class="form-control" />
-           </div>
-           <div class="form-group">
-           		<label class="label" for="email">Email and/or Phone</label>
-	           <input type="text" name="email" value=""class="form-control" />
-           </div>
-           <button type="button" class="btn btn-primary pull-right">Send Request</button>
+           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+         	<h4>Your request has been successfully sent!</h4>
+         	<p>Close this box, or enter additional details about the project.</p>
          </div>
          <div class="modal-body">
-           Test
+         	<div class="row">
+         		<div class="col-md-12">
+         			<h5>Description</h5>
+         		</div>
+	         	<div class="col-md-12"><textarea class="form-control"></textarea></div>
+         	</div>
+         	<div class="row">
+         		<div class="col-md-12">
+         			<h5>Additional Details</h5>
+         		</div>
+		     	<div class="col-md-4"><input type="" name="" value="" placeholder="Budget" class="form-control" /></div>
+        	 	<div class="col-md-4"><input type="" name="" value="" placeholder="Budget" class="form-control" /></div>
+         		<div class="col-md-4"><input type="" name="" value="" placeholder="Budget" class="form-control" /></div>
+         	</div>
          </div>
-         <div class="modal-footer">
-           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
+         <div class="modal-footer text-center">
+			<button class="btn btn-large btn-primary">Attach Details</button>
          </div>
        </div>
   </div>

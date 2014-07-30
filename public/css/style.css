@@ -473,6 +473,8 @@ body {
   .request-quote-block .selected {
     background: #1e4552;
     border: 1px solid #224f5e; }
+  .request-quote-block .glyphicon {
+    font-size: 18px; }
 
 .intro-container .titles {
   margin-top: 30px; }
@@ -688,27 +690,53 @@ body {
   margin-top: 30px; }
   #cta input {
     float: left;
-    width: 350px;
-    padding: 28px 25px 24px;
+    width: 320px;
+    padding: 15px 25px 14px;
     font-size: 18px;
     font-family: "FreightText", Georgia, serif;
     font-style: italic;
+    outline: none;
+    border-radius: 3px;
+    border: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
   #cta button {
-    /*float: left;*/ }
+    float: left; }
 
 #request-quote {
-  color: #332222; }
+  color: #332222;
+  background: rgba(232, 234, 28, 0.9); }
+  #request-quote .modal-content {
+    box-shadow: none; }
   #request-quote .modal-header {
-    height: 100px; }
-    #request-quote .modal-header .form-group {
-      float: left;
-      width: 250px;
-      padding: 20px 15px; }
-      #request-quote .modal-header .form-group label {
-        color: #332222;
-        text-transform: uppercase;
-        font-weight: bold; }
+    padding: 20px 25px; }
+    #request-quote .modal-header h4 {
+      color: #332222;
+      font-family: "Brandon Grotesque", Helvetica, sans-serif;
+      font-weight: 100;
+      text-transform: none;
+      font-size: 30px; }
+    #request-quote .modal-header p {
+      font-family: "FreightText", Georgia, serif; }
+  #request-quote .modal-footer {
+    border-top: none; }
   #request-quote .modal-body {
     /*background: $yl;*/ }
+  #request-quote .btn-primary {
+    padding: 7px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    color: #ee4853;
+    border: 1px solid #ee4853; }
+  #request-quote h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0; }
+  #request-quote .row {
+    margin-bottom: 20px; }
+
+#footer {
+  border-top: 1px solid #367e96;
+  padding-top: 50px;
+  padding-bottom: 50px; }

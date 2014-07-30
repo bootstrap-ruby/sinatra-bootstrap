@@ -626,6 +626,9 @@ body {
 		background: lighten($dark, 2%);
 		border: 1px solid lighten($dark, 5%);
 	}
+	.glyphicon {
+		font-size: 18px;
+	}
 }
 
 .intro-container {
@@ -921,36 +924,68 @@ body {
 	margin-top: 30px;
 	input {
 		float: left;
-		width: 350px;
-		padding: 28px 25px 24px;
+		width: 320px;
+		padding: 15px 25px 14px;
 		font-size: 18px;
 		font-family: $serif;
 		font-style: italic;
+		outline: none;
+		border-radius: 3px;
+		border: none;
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
 		
 	}
 	button {
-		/*float: left;*/
+		float: left;
 	}
 }
 
 #request-quote {
 	color: $black;
+	background: transparentize($yl, 0.1);
+	.modal-content {
+		box-shadow: none;
+	}
 	.modal-header {
-		height: 100px;
-		.form-group {
-			float: left;
-			width: 250px;
-			padding: 20px 15px;
-			label {
-				color: $black;
-				text-transform: uppercase;
-				font-weight: bold;
-			}
+		padding: 20px 25px;
+		h4 {
+			color: $black;
+			font-family: $sans;
+			font-weight: 100;
+			text-transform: none;
+			font-size: 30px;
 		}
+		p {
+			font-family: $serif;
+		}
+	}
+	.modal-footer {
+		border-top: none;
 	}
 	.modal-body {
 		/*background: $yl;*/
 	}
+	.btn-primary {
+		padding: 7px 15px;
+		border-radius: 4px;
+		font-size: 14px;
+		background: white;
+		color: $red;
+		border: 1px solid $red;
+	}
+	h5 {
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-top: 0;
+	}
+	.row {
+		margin-bottom: 20px;
+	}
+}
+
+#footer {
+	border-top: 1px solid lighten($dark, 20%);
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
