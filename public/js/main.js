@@ -6,6 +6,8 @@ var winW = $(window).width();
 $(document).ready(function() {
 	var $cover = $('.cover');
 	
+	$cover.height(winH);
+	
 	var coverTop = (winH - $cover.height()) / 2
 	
 	if (coverTop > 50) {
@@ -13,11 +15,34 @@ $(document).ready(function() {
 			marginTop: (winH - $cover.height()) / 2
 		});
 	}
+	
+	$('#main-intro').css({
+		top: (winH - 550) / 2
+	});
+	
+	$('#hc-logo-large').css({
+		left: (winW - 180) / 2
+	});
+	
+	$('#main-intro').css({
+		left: (winW - $('#main-intro').width()) / 2
+	});
 
 	
 	$('#start').css({ 
 		'marginTop': winH
 	});
+	
+//	$('.mountains').css({
+//		left: (winW - 1602) / 2,
+//		top: winH - 350
+//	});
+
+	
+//	$('#rear-mountain').css({
+//		top: winH - 300
+//	});
+	
 	
 //	$('#responsive-slides').cycle({
 //		timeout: 4000,
@@ -35,7 +60,7 @@ $(document).ready(function() {
 		$(this).addClass('visible');
 	}, { offset: '75%' });
 	
-	
+	$('.full-container').width(winW);
 	
 	var $aet = $('#scr-aether');
 	var $cg = $('#scr-cg');
@@ -52,26 +77,36 @@ $(document).ready(function() {
 		$(this).addClass('animate');
 	}, { offset: '70%'});
 	
-	var v = $("#icons g"), cur = 0;
+	var v = $("#large-cloud-icons g"), cur = 0;
 	for(var j, x, i = v.length; i; j = parseInt(Math.random() * i), x = v[--i], v[i] = v[j], v[j] = x);
 	function fadeInNextLI() {
 	  v.eq(cur++).addClass('popin');
-	  if(cur != v.length) setTimeout(fadeInNextLI, 200);
+	  if(cur != v.length) setTimeout(fadeInNextLI, 100);
 	}
 	
 	setTimeout(function() {
 		fadeInNextLI()
-	}, 8000);
+	}, 500);
 	
-	setTimeout(function(){
-		$('#navbar-main').animate({
-			marginTop: '20px',
-			opacity: 1
-		}, 800);
-	}, 11000);
+	setTimeout(function() {
+		$('#clouds-pair #icons g').addClass('popin');
+	}, 2000)
+	
+	setTimeout(function() {
+		$('#hc-logo-large').addClass('animate');
+	}, 5000);
+	
+	$('body').addClass('loaded');
+	
+//	setTimeout(function(){
+//		$('#navbar-main').animate({
+//			marginTop: '20px',
+//			opacity: 1
+//		}, 800);
+//	}, 11000);
 	
 	$(window).load(function() {
-		$('body').addClass('loaded');
+		
 		$aet.css({
 			left: ($aet.parent().width() - $aet.width()) / 2
 		});
@@ -95,9 +130,6 @@ $(document).ready(function() {
 		
 		skrollr.init();
 		
-		setTimeout(function() {
-			$('#cup').addClass('bounce');
-		}, 2000)
 	});
 	
 });

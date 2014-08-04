@@ -108,45 +108,28 @@ body {
 	max-width: 1280px;
 	margin: 50px auto 0px;
 	
-	
 }
 
 .intro {
 	font-family: $serif;
 	font-style: italic;
-	font-weight: 100;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	/*font-weight: 100;*/
 	text-align: center;
 	p {
-/*		-webkit-transform: translateY(30px);
-		opacity: 0;*/
 		font-size: 22px;
-
 	}
-/*	p:nth-child(1) {
-		-webkit-transition-delay: 1s;
+	.intro-text {
+		opacity: 0;
+		-webkit-transition-duration: 1600ms;
+		-webkit-transform: translateY(30px);
+		-webkit-transition-delay: 7s;
 		.loaded & {
 			opacity: 1;
-			-webkit-transform: translateY(0);	
+			-webkit-transform: translateY(0px);
 		}
 	}
-	p:nth-child(2) {
-		-webkit-transition-delay: 2.5s;
-		.loaded & {
-			opacity: 1;
-			-webkit-transform: translateY(0);	
-		}
-	}
-	p:nth-child(3) {
-		-webkit-transition-delay: 4s;
-		.loaded & {
-			opacity: 1;
-			-webkit-transform: translateY(0);	
-		}
-	}*/
 	.main-title {
-		margin-top: 30px;
+		margin-top: 50px;
 		font-family: $sansAlt;
 		font-size: 24px;
 		font-style: normal;
@@ -566,8 +549,9 @@ body {
 	fill-opacity: 1;
 }
 
-.services-wrap {
+#services-wrap {
 	color: $yl;
+	background: $dark;
 	.services-block {
 		margin-bottom: 50px;
 	}
@@ -632,6 +616,9 @@ body {
 }
 
 .intro-container {
+	background: #225465;
+	padding-top: 50px;
+	margin-top: -20px;
 	.titles {
 		margin-top: 30px;
 		h2 {
@@ -681,6 +668,7 @@ body {
 	border-bottom: 1px solid #ddd;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	overflow: hidden;
 	.section {
 		padding: 50px 0;
 	}
@@ -703,18 +691,17 @@ body {
 
 
 #proj-chand {
-	
-	padding: 50px 2.5%;
-	
+	overflow: hidden;
+	width: 100%;
 	-webkit-box-shadow: 0px -10px 20px transparentize(black, 0.7);
-	
 	h5 {
 		font-size: 30px;
 		font-weight: 100;
 	}
 	.screenshot-wrap {
-		width: 100%;
+		width: 90%;
 		max-width: 1400px;
+		overflow: hidden;
 	}
 	
 }
@@ -1053,4 +1040,222 @@ border-top: 1px solid lighten($dark, 10%);
 	#hc-logo {
 
 	}
+}
+
+
+
+#large-cloud-group {
+	position: fixed;
+	left: 0;
+	z-index: -1;
+	bottom: 350px;
+	#large-cloud-icons path {
+		fill: #1c404b;
+	}
+	#large-cloud-icons g {
+		-webkit-transition-duration: 400ms;
+		opacity: 0;
+	}
+	#large-cloud-icons g.popin {
+		opacity: 1;
+	}
+	circle {
+		stroke: #1c404b;
+		fill: none;
+	}
+}
+
+@-webkit-keyframes cloudlong {
+	0% {
+		stroke-dashoffset: 1000;
+		fill-opacity: 0;
+		stroke-width: 1px;
+	}
+	70% {
+		fill-opacity: 0;
+	}
+	99% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		fill-opacity: 1;
+		stroke-width: 0;
+	}
+}
+
+#large-cloud  {
+	stroke: #0dbdcf;
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 0;
+	stroke-width: 1px;
+	fill-opacity: 0;
+	fill: #2e677a;
+	stroke-opacity: 0;
+	.loaded & {
+		stroke-opacity: 1;
+		stroke-width: 0;
+		fill-opacity: 1;
+		-webkit-animation: cloudlong 3s linear;
+	}
+	
+}
+
+
+#clouds-pair {
+	z-index: -2;
+	width: 387px;
+	height: 214px;
+	position: fixed;
+	bottom: 300px;
+	right: 10px;
+	#small-clouds path {
+		stroke: #0dbdcf;
+		fill: #2e677a;
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 0;
+		stroke-width: 1px;
+		fill-opacity: 0;
+		stroke-opacity: 0;
+		.loaded & {
+			stroke-opacity: 1;
+			stroke-width: 0;
+			fill-opacity: 1;
+			-webkit-animation: cloudlong 3s linear;
+		}
+	}
+	#icons path {
+		fill: #1c404b;
+	}
+	#icons g {
+		-webkit-transition-duration: 400ms;
+		opacity: 0;
+	}
+	#icons g.popin {
+		opacity: 1;
+	}
+}
+
+
+@-webkit-keyframes logosmall {
+	0% {
+		stroke-dashoffset: 100;
+		fill-opacity: 0;
+		stroke-width: 1px;
+	}
+	99% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		fill-opacity: 1;
+		stroke-width: 0;
+	}
+}
+
+@-webkit-keyframes logolong {
+	0% {
+		stroke-dashoffset: 600;
+		fill-opacity: 0;
+		stroke-width: 1px;
+	}
+	99% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		fill-opacity: 1;
+		stroke-width: 0;
+	}
+}
+
+ .logo-short-path {
+	stroke: $red;
+	stroke-dasharray: 100;
+	stroke-dashoffset: 0;
+	stroke-width: 1px;
+	fill-opacity: 0;
+	stroke-opacity: 0;
+	.animate & {
+		stroke-opacity: 1;
+		stroke-width: 0;
+		fill-opacity: 1;
+		-webkit-animation: logosmall 5s linear;
+	}
+}
+
+.logo-long-path {
+	stroke: $red;
+	stroke-dasharray: 600;
+	stroke-dashoffset: 0;
+	stroke-width: 1px;
+	fill-opacity: 0;
+	stroke-opacity: 0;
+	.animate & {
+		stroke-opacity: 1;
+		stroke-width: 0;
+		fill-opacity: 1;
+		-webkit-animation: logolong 4s linear;
+	}
+	
+}
+
+#hc-logo-large {
+	fill: $red;
+	margin-bottom: 30px;
+	-webkit-transform: translateY(20px);
+	-webkit-transition-duration: 800ms;
+}
+
+#hc-logo-large.animate {
+	fill: $red;
+	margin-bottom: 30px;
+	-webkit-transform: translateY(0);
+}
+
+.mountains {
+	position: fixed;
+	z-index: -10;
+	bottom: -80px;
+	width: 100% !important;
+	left: 0;
+	right: 0;
+	path {
+		width: 100% !important;
+	}
+}
+
+#front-mountain {
+	position: absolute;
+	z-index: 1;
+}
+
+#main-intro {
+	position: fixed;
+	z-index: -1;
+	top: 280px;
+}
+
+.stars {
+	position: fixed;
+	height: 293px;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: -5;
+	background-repeat: repeat-x;
+	
+}
+
+#stars-1 {
+	top: 50px;
+	background-image: url(../images/stars-1.png);
+	background-position: top center;
+}
+
+#stars-2 {
+	background-image: url(../images/stars-2.png);
+	background-position: top center;
+}
+
+#stars-3 {
+	background-image: url(../images/stars-3.png);
+	background-position: top center;
 }
