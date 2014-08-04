@@ -928,9 +928,13 @@ body {
   .mountains path {
     width: 100% !important; }
 
-#front-mountain {
+#front-mountain-wrap {
   position: absolute;
-  z-index: 1; }
+  z-index: 1;
+  bottom: -80px;
+  left: 0;
+  right: 0;
+  width: 100%; }
 
 #main-intro {
   position: fixed;

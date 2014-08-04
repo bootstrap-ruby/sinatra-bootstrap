@@ -96,7 +96,9 @@ $(document).ready(function() {
 		$('#hc-logo-large').addClass('animate');
 	}, 5000);
 	
-	$('body').addClass('loaded');
+	setTimeout(function() {
+		$('body').addClass('loaded');
+	},	1200)
 	
 //	setTimeout(function(){
 //		$('#navbar-main').animate({
