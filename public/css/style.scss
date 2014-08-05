@@ -1438,7 +1438,7 @@ border-top: 1px solid lighten($dark, 10%);
 		width: 32px;
 		float: right;
 		height: 32px;
-		padding: 8px;
+		padding: 10px 8px;
 		.menubar {
 			width: 100%;
 			background: #47a7c4;
@@ -1469,8 +1469,8 @@ border-top: 1px solid lighten($dark, 10%);
 		height: 32px;
 		float: left;
 		text-align: center;
-		.glyphicon {
-			color: $dark;
+		path {
+			fill: #47a7c4;
 		}
 	}
 	#nav-items {
@@ -1486,17 +1486,22 @@ border-top: 1px solid lighten($dark, 10%);
 		border: 1px solid transparentize(#47a7c4, 0.7);
 		background: transparentize(white, 0);
 		border-top: 0;
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 3px;
 		li {
 			text-transform: uppercase;
 			/*text-align: right;*/
 			list-style: none;
-			/*font-family: $sansAlt;*/
+			font-family: $sansAlt;
 			font-weight: 400;
 			font-size: 14px;
-			color: #47a7c4;
+			
 			border-bottom: 1px solid transparentize(#47a7c4, 0.7);
 			padding: 13px 45px 11px 15px;
 			margin-bottom: 0;
+			a {
+				color: #47a7c4;
+			}
 			&:last-child {
 				border-bottom: 0;
 			}

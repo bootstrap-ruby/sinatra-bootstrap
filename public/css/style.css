@@ -1100,7 +1100,7 @@ body {
     width: 32px;
     float: right;
     height: 32px;
-    padding: 8px; }
+    padding: 10px 8px; }
     #navigation #menu-btn .menubar {
       width: 100%;
       background: #47a7c4;
@@ -1127,8 +1127,8 @@ body {
     height: 32px;
     float: left;
     text-align: center; }
-    #navigation #contact-btn .glyphicon {
-      color: #1b3f4b; }
+    #navigation #contact-btn path {
+      fill: #47a7c4; }
   #navigation #nav-items {
     padding: 0;
     display: none;
@@ -1141,18 +1141,21 @@ body {
     float: left;
     border: 1px solid rgba(71, 167, 196, 0.3);
     background: white;
-    border-top: 0; }
+    border-top: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
     #navigation #nav-items li {
       text-transform: uppercase;
       /*text-align: right;*/
       list-style: none;
-      /*font-family: $sansAlt;*/
+      font-family: "Bree", sans-serif;
       font-weight: 400;
       font-size: 14px;
-      color: #47a7c4;
       border-bottom: 1px solid rgba(71, 167, 196, 0.3);
       padding: 13px 45px 11px 15px;
       margin-bottom: 0; }
+      #navigation #nav-items li a {
+        color: #47a7c4; }
       #navigation #nav-items li:last-child {
         border-bottom: 0; }
       #navigation #nav-items li:first-child {
