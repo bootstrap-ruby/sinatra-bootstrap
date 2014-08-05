@@ -561,6 +561,8 @@ body {
 
 #services-wrap {
 	color: $yl;
+	position: relative;
+	z-index: 20;
 	background: $dark;
 	.services-block {
 		margin-bottom: 50px;
@@ -644,7 +646,12 @@ body {
 	.titles {
 		h2 {
 			font-size: 48px;
+			color: $red;
 		}
+	}
+	.lead {
+		font-weight: 400;
+		line-height: 160%;
 	}
 }
 
@@ -1388,8 +1395,7 @@ border-top: 1px solid lighten($dark, 10%);
 	}
 	.scroll-icon {
 		font-size: 18px;
-		display: block;
-		-webkit-animation: arrow 5s ease-in-out 0s infinite;
+		display: none;
 	}
 	a {
 		color: inherit;
@@ -1399,6 +1405,13 @@ border-top: 1px solid lighten($dark, 10%);
 		.scroll-text {
 			opacity: 1;
 		}
+	}
+}
+
+#scroll-tip.animate {
+	.scroll-icon {
+		display: block;
+		-webkit-animation: arrow 5s ease-in-out 0s infinite;
 	}
 }
 

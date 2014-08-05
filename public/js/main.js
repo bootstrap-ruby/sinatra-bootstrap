@@ -94,11 +94,15 @@ $(document).ready(function() {
 	
 	setTimeout(function() {
 		$('#hc-logo-large').addClass('animate');
-	}, 5000);
+	}, 6000);
 	
 	setTimeout(function() {
 		$('body').addClass('loaded');
-	},	1200)
+	},	1200);
+	
+	setTimeout(function() {
+		$('#scroll-tip').addClass('animate');
+	}, 14000);
 	
 //	setTimeout(function(){
 //		$('#navbar-main').animate({
