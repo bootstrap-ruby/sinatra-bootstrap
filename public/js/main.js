@@ -73,7 +73,7 @@ $(document).ready(function() {
 		left: ($aet.parent().width() - 813) / 2
 	});
 	
-	$('.screenshot-wrap, #browser-frames').waypoint(function() {
+	$('.screenshot-wrap, #browser-frames, #social-web').waypoint(function() {
 		$(this).addClass('animate');
 	}, { offset: '70%'});
 	
@@ -86,7 +86,7 @@ $(document).ready(function() {
 	
 	setTimeout(function() {
 		fadeInNextLI()
-	}, 500);
+	}, 1000);
 	
 	setTimeout(function() {
 		$('#clouds-pair #icons g').addClass('popin');
