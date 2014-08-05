@@ -646,6 +646,7 @@ body {
 	.titles {
 		h2 {
 			margin-top: 0;
+			font-size: 60px;
 		}
 	}
 	.lead {
@@ -1103,6 +1104,10 @@ border-top: 1px solid lighten($dark, 10%);
 		stroke-dashoffset: 1000;
 		fill-opacity: 0;
 		stroke-width: 1px;
+		stroke-opacity: 0;
+	}
+	20% {
+		stroke-opacity: 1;
 	}
 	70% {
 		fill-opacity: 0;
@@ -1124,7 +1129,7 @@ border-top: 1px solid lighten($dark, 10%);
 	fill-opacity: 0;
 	fill: #2e677a;
 	stroke-opacity: 0;
-	.loaded & {
+	.animate & {
 		stroke-opacity: 1;
 		stroke-width: 0;
 		fill-opacity: 1;
@@ -1149,7 +1154,7 @@ border-top: 1px solid lighten($dark, 10%);
 		stroke-width: 1px;
 		fill-opacity: 0;
 		stroke-opacity: 0;
-		.loaded & {
+		.animate & {
 			stroke-opacity: 1;
 			stroke-width: 0;
 			fill-opacity: 1;
@@ -1165,6 +1170,9 @@ border-top: 1px solid lighten($dark, 10%);
 	}
 	#icons g.popin {
 		opacity: 1;
+	}
+	#lightning {
+		opacity: 0;
 	}
 }
 

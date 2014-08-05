@@ -486,7 +486,8 @@ body {
   position: relative;
   z-index: 30; }
   .intro-container .titles h2 {
-    margin-top: 0; }
+    margin-top: 0;
+    font-size: 60px; }
   .intro-container .lead {
     font-weight: 400;
     line-height: 160%; }
@@ -826,7 +827,11 @@ body {
   0% {
     stroke-dashoffset: 1000;
     fill-opacity: 0;
-    stroke-width: 1px; }
+    stroke-width: 1px;
+    stroke-opacity: 0; }
+
+  20% {
+    stroke-opacity: 1; }
 
   70% {
     fill-opacity: 0; }
@@ -846,7 +851,7 @@ body {
   fill-opacity: 0;
   fill: #2e677a;
   stroke-opacity: 0; }
-  .loaded #large-cloud {
+  .animate #large-cloud {
     stroke-opacity: 1;
     stroke-width: 0;
     fill-opacity: 1;
@@ -867,7 +872,7 @@ body {
     stroke-width: 1px;
     fill-opacity: 0;
     stroke-opacity: 0; }
-    .loaded #clouds-pair #small-clouds path {
+    .animate #clouds-pair #small-clouds path {
       stroke-opacity: 1;
       stroke-width: 0;
       fill-opacity: 1;
@@ -879,6 +884,8 @@ body {
     opacity: 0; }
   #clouds-pair #icons g.popin {
     opacity: 1; }
+  #clouds-pair #lightning {
+    opacity: 0; }
 
 @-webkit-keyframes logosmall {
   0% {

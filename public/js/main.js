@@ -86,7 +86,7 @@ $(document).ready(function() {
 	
 	setTimeout(function() {
 		fadeInNextLI()
-	}, 5000);
+	}, 4000);
 	
 	setTimeout(function() {
 		$('#clouds-pair #icons g').addClass('popin');
@@ -97,7 +97,7 @@ $(document).ready(function() {
 	}, 500);
 	
 	setTimeout(function() {
-		$('body').addClass('loaded');
+		$('#clouds-container').addClass('animate');
 	},	3500);
 	
 	setTimeout(function() {
@@ -106,7 +106,11 @@ $(document).ready(function() {
 	
 	setTimeout(function() {
 		$('.intro-text').addClass('animate');
-	}, 10000);
+	}, 9000);
+	
+	setInterval(function() {
+		
+	}, 10000)
 	
 //	setTimeout(function(){
 //		$('#navbar-main').animate({
