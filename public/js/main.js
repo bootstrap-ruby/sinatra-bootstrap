@@ -112,6 +112,13 @@ $(document).ready(function() {
 		
 	}, 10000)
 	
+	$('#menu-btn').click(function() {
+		$('#menu-btn').toggleClass('clicked');
+		$('#nav-items').toggle();
+		
+		return false;
+	});
+	
 //	setTimeout(function(){
 //		$('#navbar-main').animate({
 //			marginTop: '20px',
