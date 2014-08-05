@@ -94,10 +94,10 @@ body {
     opacity: 0;
     -webkit-transition-duration: 1600ms;
     /*-webkit-transform: scale(.9);*/
-    -webkit-transition-delay: 6s; }
-    .loaded .intro .intro-text {
-      opacity: 1;
-      -webkit-transform: scale(1); }
+    /*-webkit-transition-delay: 6s;*/ }
+  .intro .intro-text.animate {
+    opacity: 1;
+    -webkit-transform: scale(1); }
   .intro .main-title {
     margin-top: 50px;
     font-family: "Bree", sans-serif;
@@ -486,15 +486,14 @@ body {
   position: relative;
   z-index: 30; }
   .intro-container .titles h2 {
-    font-size: 48px;
-    color: #ee4853; }
+    margin-top: 0; }
   .intro-container .lead {
     font-weight: 400;
     line-height: 160%; }
 
 #intro-screenshots {
   position: relative;
-  margin-top: 180px;
+  margin-top: 200px;
   z-index: 0;
   height: 450px; }
   #intro-screenshots .screenshot {
@@ -655,7 +654,7 @@ body {
   height: 550px; }
   #proj-invoices img {
     width: 600px;
-    border: 1px solid #ddd;
+    border: 1px solid #e5f1f6;
     position: absolute;
     top: 25px;
     left: 494px;
@@ -682,13 +681,16 @@ body {
     left: -250px; }
 
 #ipad-3d path {
-  fill-opacity: 1;
-  stroke: #ffffff;
-  /*stroke: $red;*/ }
+  stroke: #e5f1f6;
+  fill-opacity: 1; }
 #ipad-3d ellipse {
   fill-opacity: 1;
-  fill: #ddd;
-  stroke: #ffffff; }
+  fill: white;
+  stroke: #ecf5f8; }
+#ipad-3d .front {
+  fill: #fff; }
+#ipad-3d .side {
+  fill: #f0f7fa; }
 
 /*
 #proj-invoices.visible {
@@ -928,7 +930,7 @@ body {
     stroke-opacity: 1;
     stroke-width: 0;
     fill-opacity: 1;
-    -webkit-animation: logolong 4s linear; }
+    -webkit-animation: logolong 5s linear; }
 
 #hc-logo-large {
   fill: #ee4853;

@@ -86,7 +86,7 @@ $(document).ready(function() {
 	
 	setTimeout(function() {
 		fadeInNextLI()
-	}, 1000);
+	}, 5000);
 	
 	setTimeout(function() {
 		$('#clouds-pair #icons g').addClass('popin');
@@ -94,15 +94,19 @@ $(document).ready(function() {
 	
 	setTimeout(function() {
 		$('#hc-logo-large').addClass('animate');
-	}, 6000);
+	}, 500);
 	
 	setTimeout(function() {
 		$('body').addClass('loaded');
-	},	1200);
+	},	3500);
 	
 	setTimeout(function() {
 		$('#scroll-tip').addClass('animate');
 	}, 14000);
+	
+	setTimeout(function() {
+		$('.intro-text').addClass('animate');
+	}, 10000);
 	
 //	setTimeout(function(){
 //		$('#navbar-main').animate({

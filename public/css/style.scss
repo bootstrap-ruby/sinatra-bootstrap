@@ -125,11 +125,11 @@ body {
 		opacity: 0;
 		-webkit-transition-duration: 1600ms;
 		/*-webkit-transform: scale(.9);*/
-		-webkit-transition-delay: 6s;
-		.loaded & {
-			opacity: 1;
-			-webkit-transform: scale(1);
-		}
+		/*-webkit-transition-delay: 6s;*/
+	}
+	.intro-text.animate {
+		opacity: 1;
+		-webkit-transform: scale(1);
 	}
 	.main-title {
 		margin-top: 50px;
@@ -645,8 +645,7 @@ body {
 	z-index: 30;
 	.titles {
 		h2 {
-			font-size: 48px;
-			color: $red;
+			margin-top: 0;
 		}
 	}
 	.lead {
@@ -657,7 +656,7 @@ body {
 
 #intro-screenshots {
 	position: relative;
-	margin-top: 180px;
+	margin-top: 200px;
 	z-index: 0;
 	height: 450px;
 	.screenshot {
@@ -878,7 +877,7 @@ body {
 	height: 550px;
 	img {
 		width: 600px;
-		border: 1px solid #ddd;
+		border: 1px solid lighten($dark, 73%);
 		position: absolute;
 		top: 25px;
 		left: 494px;
@@ -913,14 +912,20 @@ body {
 
 #ipad-3d {
 	path {
+		stroke: lighten($dark, 73%);
 		fill-opacity: 1;
-		stroke: #ffffff;
-		/*stroke: $red;*/
 	}
 	ellipse {
 		fill-opacity: 1;
-		fill: #ddd;
-		stroke: #ffffff;
+		fill: white;
+		stroke: lighten($dark, 75%);
+	}
+	.front {
+		fill: #fff;
+		
+	}
+	.side {
+		fill: lighten($dark, 76%);
 	}
 }
 
@@ -1220,7 +1225,7 @@ border-top: 1px solid lighten($dark, 10%);
 		stroke-opacity: 1;
 		stroke-width: 0;
 		fill-opacity: 1;
-		-webkit-animation: logolong 4s linear;
+		-webkit-animation: logolong 5s linear;
 	}
 	
 }
