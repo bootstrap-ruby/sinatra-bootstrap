@@ -66,6 +66,10 @@ body {
   background-color: #1b3f4b;
   color: #e8ea1c; }
 
+body.bts {
+  background: white;
+  color: #1b3f4b; }
+
 .btn-primary {
   background: #ee4853;
   font-family: "Bree", sans-serif;
@@ -1007,3 +1011,26 @@ body {
         border-bottom: 0; }
       #navigation #nav-items li:first-child {
         border-top: 1px solid rgba(71, 167, 196, 0.3); }
+
+#hc-cup-main {
+  margin-top: 100px;
+  margin-bottom: 50px; }
+  #hc-cup-main #hc-cup-icons path {
+    fill: #ee4853; }
+  #hc-cup-main #hc-cup-inside path {
+    fill: #e8ea1c; }
+  #hc-cup-main #hc-cup-lines path {
+    stroke: #ee4853;
+    fill: none; }
+  #hc-cup-main #hc-cup-logo path {
+    fill: #ee4853;
+    stroke: none; }
+  #hc-cup-main circle {
+    display: none; }
+
+.bts h2 {
+  text-transform: lowercase;
+  font-weight: 100;
+  font-size: 60px;
+  color: #1a3f4a;
+  font-family: "Brandon Grotesque", Helvetica, sans-serif; }

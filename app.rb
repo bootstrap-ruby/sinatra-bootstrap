@@ -13,6 +13,7 @@ get '/' do
 end
 
 get '/team' do
+	@bodyclass = 'class="bts"'
 
 	erb :team
 end

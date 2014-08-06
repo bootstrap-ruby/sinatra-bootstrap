@@ -6,6 +6,7 @@ $red: #ee4853;
 $lightG: #f0f3f4;
 $vibBlue: #10a7c7;
 $dark: #1b3f4b;
+$darkBlue: #1a3f4a;
 $black: #332222;
 
 * {
@@ -92,6 +93,11 @@ body {
 	font-family: $sans;
 	background-color: $dark;
 	color: $yl;
+}
+
+body.bts {
+	background: white;
+	color: $dark;
 }
 
 .btn-primary {
@@ -1306,5 +1312,37 @@ border-top: 1px solid lighten($dark, 10%);
 				border-top: 1px solid transparentize(#47a7c4, 0.7);;
 			}	
 		}
+	}
+}
+
+#hc-cup-main {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	#hc-cup-icons path {
+		fill: $red;
+	}
+	#hc-cup-inside path {
+		fill: $yl;
+	}
+	#hc-cup-lines path {
+		stroke: $red;
+		fill: none;
+	}
+	#hc-cup-logo path {
+		fill: $red;
+		stroke: none;
+	}
+	circle {
+		display: none;
+	}
+}
+
+.bts {
+	h2 {
+		text-transform: lowercase;
+		font-weight: 100;
+		font-size: 60px;
+		color: $darkBlue;
+		font-family: $sans;
 	}
 }
