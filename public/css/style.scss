@@ -245,22 +245,17 @@ body.bts {
 	}
 }
 
-#cup {
-	margin: 0 auto;
-	display: block;
-	#Layer_5 {
-		circle, polyline, line, path, polygon {
-			stroke: $red;
-			stroke-dasharray: 600;
-			stroke-dashoffset: 0;
-			stroke-width: 1px;
-			fill-opacity: 0;
-			stroke-opacity: 0;
-			stroke-opacity: 1;
-			-webkit-animation: cupDash 12s linear;
-		}
-	}	
-} 
+#hc-cup-icons {
+	circle, polyline, line, path, polygon {
+		stroke: $red;
+		stroke-dasharray: 600;
+		stroke-dashoffset: 0;
+		stroke-width: 0;
+		fill-opacity: 1;
+		stroke-opacity: 0;
+		/*-webkit-animation: cupDash 12s linear;*/
+	}
+}	
 
 @-webkit-keyframes cookies {
 	0% {
@@ -1344,5 +1339,75 @@ border-top: 1px solid lighten($dark, 10%);
 		font-size: 60px;
 		color: $darkBlue;
 		font-family: $sans;
+	}
+	#footer {
+		border-top: 1px solid #ddd;
+		#hc-logo {
+			circle {
+				display: none;
+			}
+			#hc-logo2 path {
+				fill: $red;
+			}
+		}
+		#cold-quote {
+			color: $darkBlue;
+		}
+	}
+}
+
+img.avatar {
+	width: 100%;
+	max-width: 180px;
+	max-height: 180px;
+	border-radius: 180px;
+}
+
+#team-members {
+	text-align: center;
+	background: #fafafa;
+	margin-top: 25px;
+	border-top: 1px solid #ddd;
+	padding-top: 75px;
+	
+	.profile {
+		text-align: center;
+		margin-bottom: 25px;
+		h4 {
+			text-transform: lowercase;
+			font-weight: 100;
+			font-family: $sans;
+			margin-bottom: 5px;
+			font-size: 28px; 
+			margin-top: 10px;
+		}
+		.designation {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 13px !important;
+		}
+	}
+}
+
+#hiring-block {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	h3 {
+		font-weight: 100;
+		text-transform: lowercase;
+		font-size: 60px;
+		font-family: $sans;
+		margin-bottom: 25px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 100;
+		strong {
+			text-transform: uppercase;
+			color: $red;
+		}
+	}
+	img {
+		margin-top: 30px;
 	}
 }

@@ -18,7 +18,7 @@ get '/team' do
 	erb :team
 end
 
-get '/design-services' do
+get '/services' do
 
 	erb :services
 end

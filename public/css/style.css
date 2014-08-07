@@ -184,18 +184,14 @@ body.bts {
   99% {
     stroke-dashoffset: 0; } }
 
-#cup {
-  margin: 0 auto;
-  display: block; }
-  #cup #Layer_5 circle, #cup #Layer_5 polyline, #cup #Layer_5 line, #cup #Layer_5 path, #cup #Layer_5 polygon {
-    stroke: #ee4853;
-    stroke-dasharray: 600;
-    stroke-dashoffset: 0;
-    stroke-width: 1px;
-    fill-opacity: 0;
-    stroke-opacity: 0;
-    stroke-opacity: 1;
-    -webkit-animation: cupDash 12s linear; }
+#hc-cup-icons circle, #hc-cup-icons polyline, #hc-cup-icons line, #hc-cup-icons path, #hc-cup-icons polygon {
+  stroke: #ee4853;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+  stroke-width: 0;
+  fill-opacity: 1;
+  stroke-opacity: 0;
+  /*-webkit-animation: cupDash 12s linear;*/ }
 
 @-webkit-keyframes cookies {
   0% {
@@ -1034,3 +1030,56 @@ body.bts {
   font-size: 60px;
   color: #1a3f4a;
   font-family: "Brandon Grotesque", Helvetica, sans-serif; }
+.bts #footer {
+  border-top: 1px solid #ddd; }
+  .bts #footer #hc-logo circle {
+    display: none; }
+  .bts #footer #hc-logo #hc-logo2 path {
+    fill: #ee4853; }
+  .bts #footer #cold-quote {
+    color: #1a3f4a; }
+
+img.avatar {
+  width: 100%;
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 180px; }
+
+#team-members {
+  text-align: center;
+  background: #fafafa;
+  margin-top: 25px;
+  border-top: 1px solid #ddd;
+  padding-top: 75px; }
+  #team-members .profile {
+    text-align: center;
+    margin-bottom: 25px; }
+    #team-members .profile h4 {
+      text-transform: lowercase;
+      font-weight: 100;
+      font-family: "Brandon Grotesque", Helvetica, sans-serif;
+      margin-bottom: 5px;
+      font-size: 28px;
+      margin-top: 10px; }
+    #team-members .profile .designation {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 13px !important; }
+
+#hiring-block {
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  #hiring-block h3 {
+    font-weight: 100;
+    text-transform: lowercase;
+    font-size: 60px;
+    font-family: "Brandon Grotesque", Helvetica, sans-serif;
+    margin-bottom: 25px; }
+  #hiring-block p {
+    font-size: 18px;
+    font-weight: 100; }
+    #hiring-block p strong {
+      text-transform: uppercase;
+      color: #ee4853; }
+  #hiring-block img {
+    margin-top: 30px; }
