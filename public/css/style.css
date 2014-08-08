@@ -1044,6 +1044,8 @@ body.bts {
   font-family: "Brandon Grotesque", Helvetica, sans-serif; }
 .bts #footer {
   border-top: 1px solid #ddd; }
+  .bts #footer hr {
+    border-color: #ddd; }
   .bts #footer #hc-logo circle {
     display: none; }
   .bts #footer #hc-logo #hc-logo2 path {
@@ -1086,7 +1088,8 @@ img.avatar {
     text-transform: lowercase;
     font-size: 60px;
     font-family: "Brandon Grotesque", Helvetica, sans-serif;
-    margin-bottom: 25px; }
+    margin-bottom: 25px;
+    /*float: left;*/ }
   #hiring-block p {
     font-size: 18px;
     font-weight: 100; }
@@ -1095,3 +1098,15 @@ img.avatar {
       color: #ee4853; }
   #hiring-block img {
     margin-top: 30px; }
+  #hiring-block .write-in-btn {
+    color: white;
+    background: #ee4853;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ee4853;
+    /*margin-left: 25px;*/ }
+    #hiring-block .write-in-btn .glyphicon {
+      font-size: 12px;
+      -webkit-transform: translateY(-2px); }

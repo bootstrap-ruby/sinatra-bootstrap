@@ -1356,6 +1356,9 @@ border-top: 1px solid lighten($dark, 10%);
 	}
 	#footer {
 		border-top: 1px solid #ddd;
+		hr {
+			border-color: #ddd;
+		}
 		#hc-logo {
 			circle {
 				display: none;
@@ -1412,6 +1415,7 @@ img.avatar {
 		font-size: 60px;
 		font-family: $sans;
 		margin-bottom: 25px;
+		/*float: left;*/
 	}
 	p {
 		font-size: 18px;
@@ -1423,5 +1427,19 @@ img.avatar {
 	}
 	img {
 		margin-top: 30px;
+	}
+	.write-in-btn {
+		color: lighten(white, 10%);
+		background: $red;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 16px;
+		margin-top: 5px;
+		border: 1px solid $red;
+		/*margin-left: 25px;*/
+		.glyphicon {
+			font-size: 12px;
+			-webkit-transform: translateY(-2px);
+		}
 	}
 }
