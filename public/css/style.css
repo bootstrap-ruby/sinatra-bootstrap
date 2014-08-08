@@ -177,21 +177,23 @@ body.bts {
     stroke-opacity: 1;
     -webkit-animation: longdash 4s linear; }
 
-@-webkit-keyframes cupDash {
-  0% {
-    stroke-dashoffset: 600; }
+#hc-cup-icons, #hc-cup-inside {
+  opacity: 0;
+  -webkit-transition-duration: 1400ms;
+  -webkit-transition-delay: 2s; }
+  .animate #hc-cup-icons, .animate #hc-cup-inside {
+    opacity: 1; }
 
-  99% {
-    stroke-dashoffset: 0; } }
-
-#hc-cup-icons circle, #hc-cup-icons polyline, #hc-cup-icons line, #hc-cup-icons path, #hc-cup-icons polygon {
-  stroke: #ee4853;
-  stroke-dasharray: 600;
+#hc-cup-lines path {
+  stroke: #3e727d;
+  stroke-dasharray: 500;
   stroke-dashoffset: 0;
-  stroke-width: 0;
-  fill-opacity: 1;
-  stroke-opacity: 0;
-  /*-webkit-animation: cupDash 12s linear;*/ }
+  stroke-width: 1px;
+  fill-opacity: 0;
+  stroke-opacity: 0; }
+  .animate #hc-cup-lines path {
+    stroke-opacity: 1;
+    -webkit-animation: Dash 6s linear; }
 
 @-webkit-keyframes cookies {
   0% {

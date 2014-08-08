@@ -236,24 +236,28 @@ body.bts {
 	
 }
 
-@-webkit-keyframes cupDash {
-	0% {
-		stroke-dashoffset: 600;
-	}
-	99% {
-		stroke-dashoffset: 0;
+
+#hc-cup-icons, #hc-cup-inside {
+	opacity: 0;
+	-webkit-transition-duration: 1400ms;
+	-webkit-transition-delay: 2s;
+	.animate & {
+		opacity: 1;
 	}
 }
 
-#hc-cup-icons {
-	circle, polyline, line, path, polygon {
-		stroke: $red;
-		stroke-dasharray: 600;
+#hc-cup-lines {
+	path {
+		stroke: rgb(62, 114, 125);
+		stroke-dasharray: 500;
 		stroke-dashoffset: 0;
-		stroke-width: 0;
-		fill-opacity: 1;
+		stroke-width: 1px;
+		fill-opacity: 0;
 		stroke-opacity: 0;
-		/*-webkit-animation: cupDash 12s linear;*/
+		.animate & {
+			stroke-opacity: 1;
+			-webkit-animation: Dash 6s linear;
+		}
 	}
 }	
 

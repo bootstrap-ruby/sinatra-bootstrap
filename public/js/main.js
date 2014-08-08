@@ -112,6 +112,10 @@ $(document).ready(function() {
 		
 	}, 10000)
 	
+	setTimeout(function() {
+		$('#hc-cup-main').addClass('animate');
+	}, 200);
+	
 	$('#menu-btn').click(function() {
 		$('#menu-btn').toggleClass('clicked');
 		$('#nav-items').toggle();
