@@ -601,26 +601,38 @@ body.bts {
     margin-bottom: 20px; }
 
 #footer {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 40px;
   border-top: 1px solid #295e70; }
-  #footer h3 {
+  #footer .contact-info-wrap {
+    margin-top: 20px; }
+  #footer h4 {
     color: #ee4853;
     font-size: 30px;
-    margin-top: 30px; }
+    float: left;
+    margin-right: 20px;
+    margin-top: 0; }
   #footer .contact-info {
-    padding-left: 0; }
+    padding-left: 0;
+    margin-top: 20px; }
     #footer .contact-info li {
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 5px;
       list-style: none;
       margin-right: 15px;
       float: left; }
+    #footer .contact-info .label {
+      color: #ee4853;
+      text-transform: uppercase; }
   #footer address {
     font-size: 18px;
-    margin-top: 20px; }
+    margin-top: 5px;
+    font-family: "FreightText", Georgia, serif;
+    font-style: italic;
+    float: left; }
   #footer hr {
-    border-color: #295e70; }
+    border-color: #295e70;
+    margin-top: 5px; }
   #footer .footer-nav {
     padding-left: 0;
     margin-top: 10px; }

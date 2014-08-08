@@ -804,30 +804,44 @@ body.bts {
 }
 
 #footer {
-padding-bottom: 30px;
+padding-bottom: 20px;
 padding-top: 40px;
 border-top: 1px solid lighten($dark, 10%);
-	h3 {
+	.contact-info-wrap {
+		margin-top: 20px;
+	}
+	h4 {
 		color: $red;
 		font-size: 30px;
-		margin-top: 30px;
+		float: left;
+		margin-right: 20px;
+		margin-top: 0;
 	}
 	.contact-info {
 		padding-left: 0;
+		margin-top: 20px;
 		li {
-			font-size: 18px;
+			font-size: 16px;
 			margin-bottom: 5px;
 			list-style: none;
 			margin-right: 15px;
 			float: left;
 		}
+		.label {
+			color: $red;
+			text-transform: uppercase;
+		}
 	} 
 	address {
 		font-size: 18px;
-		margin-top: 20px;
+		margin-top: 5px;
+		font-family: $serif;
+		font-style: italic;
+		float: left;
 	}
 	hr {
 		border-color: lighten($dark, 10%);
+		margin-top: 5px;
 	}
 	.footer-nav {
 		padding-left: 0;
