@@ -626,7 +626,7 @@ body.bts {
       text-transform: uppercase; }
   #footer address {
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 7px;
     font-family: "FreightText", Georgia, serif;
     font-style: italic;
     float: left; }
@@ -1104,7 +1104,7 @@ img.avatar {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 16px;
-    margin-top: 5px;
+    margin-top: 10px;
     border: 1px solid #ee4853;
     /*margin-left: 25px;*/ }
     #hiring-block .write-in-btn .glyphicon {
