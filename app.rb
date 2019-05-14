@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'sinatra'
 
 configure do
@@ -24,7 +23,7 @@ get '/' do
 end
 
 get '/login/form' do
-  erb :login_form
+  erb :login_form, :layout => :layout
 end
 
 post '/login/attempt' do
