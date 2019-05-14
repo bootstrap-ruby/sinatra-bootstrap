@@ -1,14 +1,10 @@
 # Hello
 
-====
-
 This is a demonstrator for [Sinatra](http://www.sinatrarb.com/) and [Bootstrap](http://getbootstrap.com/).
 
 Use it as a boilerplate to start your own apps.
 
-Go!
-
-===
+## Go
 
 Download and run sinatra-bootstrap:
 
@@ -22,8 +18,6 @@ Download and run sinatra-bootstrap:
 
 Then open [http://localhost:9292/](http://localhost:9292/)
 
-What's next?
-
-============
+## What's next
 
 - Try the rerun gem to restart Sinatra automatically when you change source files: <https://github.com/alexch/rerun>
