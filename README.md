@@ -8,6 +8,8 @@ Use it as a boilerplate to start your own apps.
 Go!
 ===
 
+Ensure you have a new version of [Ruby installed](https://www.ruby-lang.org/en/downloads/).
+
 Download and run sinatra-bootstrap:
 
     git clone https://github.com/bootstrap-ruby/sinatra-bootstrap
@@ -21,4 +23,4 @@ Then open [http://localhost:4567/](http://localhost:4567/)
 
 What's next?
 ============
-- Try the rerun gem to restart Sinatra automatically when you change source files: https://github.com/alexch/rerun
+- Try the [rerun gem](https://github.com/alexch/rerun) to restart Sinatra automatically when you change source files.
